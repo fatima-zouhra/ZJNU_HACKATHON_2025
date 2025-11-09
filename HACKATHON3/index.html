@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Find My PE Class — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="page-wrap">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo-ball" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <defs>
+                <pattern id="logoPattern" patternUnits="userSpaceOnUse" width="24" height="24">
+                  <image href="assets/images/Logo for fitness brand 'RunFree'.png" width="20" height="20" x="2" y="2" preserveAspectRatio="xMidYMid slice"/>
+                </pattern>
+              </defs>
+              <circle cx="12" cy="12" r="10" fill="url(#logoPattern)" />
+            </svg>
+          </div>
+          <div>
+            <h1>Find My PE Class</h1>
+            <p class="muted">Ask in English or 中文 — Student  portals</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="student.html">SIGN IN</a>
+          
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-wrap">
+      <div class="container">
+        <!-- Background Image Container -->
+        <div class="background-container"></div>
+        
+        <section class="left card">
+          <div class="left-hero">
+              <p class="hero-text">🏀 Everything about ZJNU sports in one click — class locations, gyms, and events.<br>Ready to get moving? 🚀</p>
+
+              <a href="chat.html" class="hero-chat-link" aria-label="Open chat">
+                <img src="assets/images/chat logo.png" alt="Open Chat" />
+              </a>
+            </div>
+        </section>
+
+      <section class="right card mapCard">
+        <!-- scene removed: no floating icons or blue orb -->
+
+        <div class="map" id="map">
+          <!-- school map image from assets (falls back to SVG below) -->
+          <img src="assets/images/school map.jpg" alt="School Map" class="school-map-photo" />
+
+          <!-- only the school map photo is shown per user request -->
+        </div>
+
+        <div class="info card small" id="infoPanel">
+          <h3 id="locName">MOST FREQUENT QUESTIONS</h3>
+          <p id="locDetails" class="muted">Add general information here about the pe app for example.</p>
+          <div class="photos" id="photos"></div>
+          <div class="meta" id="meta"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot card" style="text-align: center;">
+      <div>Copyright © 2025-2026</div>
+    </footer>
+  </div>
+
+  <!-- Floating Chat Button removed per user request -->
+  <!-- Theme toggle -->
+  <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()"><span class="theme-icon">🌙</span></button>
+
+  <script src="js/app.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

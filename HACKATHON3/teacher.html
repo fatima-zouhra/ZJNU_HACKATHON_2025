@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Find My PE Class — Teacher</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo-ball">
+          <svg viewBox="0 0 24 24">
+            <defs>
+              <pattern id="logoPattern" patternUnits="userSpaceOnUse" width="24" height="24">
+                <image href="assets/images/Logo for fitness brand 'RunFree'.png" width="20" height="20" x="2" y="2" preserveAspectRatio="xMidYMid slice"/>
+              </pattern>
+            </defs>
+            <circle cx="12" cy="12" r="10" fill="url(#logoPattern)" />
+          </svg>
+        </div>
+        <div>
+          <h1>Teacher / Admin</h1>
+          <p class="muted">Manage semester schedules, locations and photos</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="student.html">Student</a>
+        <a href="teacher-signin.html" class="active">Teacher</a>
+      </nav>
+    </header>
+
+    <main class="container" style="display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 200px);">
+      <section class="card" style="max-width:980px;width:100%;margin:20px;padding:24px">
+        <h2>Manage locations & classes</h2>
+        <form id="locForm" class="form">
+          <div class="formRow">
+            <input id="locId" placeholder="Unique ID (e.g. gym-a)" required class="small" />
+            <input id="locName" placeholder="Location name (Gym A)" required />
+          </div>
+          <div class="formRow">
+            <input id="locFloor" placeholder="Building & floor (Building B, 2nd floor)" />
+            <input id="locSport" placeholder="Sport (basketball, badminton...)" />
+          </div>
+          <div class="formRow">
+            <input id="teacherName" placeholder="Teacher name" />
+            <input id="teacherContact" placeholder="Contact (email / phone)" />
+          </div>
+          <div class="formRow">
+            <input id="photoUrl" placeholder="Photo URL (optional)" />
+            <select id="changeFreq"><option value="semester">Semester</option><option value="weekly">Weekly</option></select>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="btn primary" id="saveLoc">Save location</button>
+            <button class="btn" id="clearAll">Clear all</button>
+          </div>
+        </form>
+
+        <h3 style="margin-top:12px">Existing locations</h3>
+        <div id="locList" class="results"></div>
+      </section>
+    </main>
+
+    <footer class="foot card" style="text-align: center;">Copyright © 2025-2026</footer>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/theme.js"></script>
+  <!-- Theme toggle -->
+  <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()"><span class="theme-icon">🌙</span></button>
+</body>
+</html>
