@@ -2,7 +2,7 @@
 
 ## 🎯 Project Overview
 
-The **HandyChat** ZJNU Student Assistant is an intelligent chatbot designed to help international students at Zhejiang Normal University find PE class information and access university handbook policies through natural language conversations.
+The **HandyChat** -ZJNU Student Assistant is a chatbot designed to help international students at Zhejiang Normal University find PE class information and access university handbook policies through natural language conversations.
 
 ### ✨ Key Features
 
@@ -18,8 +18,6 @@ The **HandyChat** ZJNU Student Assistant is an intelligent chatbot designed to h
 Frontend (HTML/CSS/JS) → Flask Backend → AI Service →   Database
       ↓                      ↓               ↓              ↓
 Modern Chat UI           RESTful API    OpenAI GPT-4  MySQL Database
-
-
 
 ### Core Components
 
