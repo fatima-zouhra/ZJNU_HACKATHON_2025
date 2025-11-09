@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>HandyChat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+</head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <div class="logo">
+            <div class="logo-icon"><i class="fas fa-dumbbell"></i></div>
+            <div class="logo-text"></div>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-title">Main</div>
+            <div class="nav-item active">
+              <i class="fas fa-comments"></i>
+              <span>Chat Assistant</span>
+            </div>
+
+             
+
+            <div class="map-mini-view">
+              <div class="map-placeholder" onclick="showFullScreenMap()">
+                <i class="fas fa-university"></i>
+                <span>View Campus Map</span>
+                <small>Tap to expand</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-section faq-section">
+            <div class="nav-title">FREQUENT QUESTIONS</div>
+
+            <div id="faq-section" class="faq-container">
+              <div class="faq-item">
+                <h3>
+                  What is this
+                  <img
+                    src="{{ url_for('static', filename='images/RunningApp.png') }}"
+                    alt="Running App"
+                    class="faq-app-icon"
+                  />
+                  app for?
+                </h3>
+                <p>
+                  This app is used by students to record weekly running sessions
+                  required for Physical Education (PE) classes.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>📅 How many times do I need to run each week?</h3>
+                <p>
+                  Each student must complete
+                  <strong>two valid runs per week</strong>.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>📏 What are the distance requirements?</h3>
+                <ul>
+                  <li>
+                    <strong>Men:</strong> At least <strong>3.5 km</strong> per
+                    run
+                  </li>
+                  <li>
+                    <strong>Women:</strong> At least <strong>3 km</strong> per
+                    run
+                  </li>
+                </ul>
+              </div>
+
+              <div class="faq-item">
+                <h3>🗺️ What are the green and orange points?</h3>
+                <p>
+                  Each valid run must pass through at least
+                  <strong>two green checkpoints</strong> and
+                  <strong>one orange checkpoint</strong> on the campus map.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>🚫 What happens if I don't complete my weekly runs?</h3>
+                <p>
+                  If you miss a week or don't meet the distance and checkpoint
+                  requirements, your record for that week will be marked as
+                  <strong>incomplete</strong> and may affect your PE grade.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>🏫 Can I run anywhere?</h3>
+                <p>
+                  No — runs must be completed within the designated university
+                  running zones shown in the app's map.
+                </p>
+              </div>
+
+              <div class="faq-item">
+                <h3>💡 Tips for better results</h3>
+                <ul>
+                  <li>Check your GPS before starting your run.</li>
+                  <li>
+                    Make sure your phone has enough battery and mobile data.
+                  </li>
+                  <li>
+                    Run during allowed hours and avoid pausing for too long.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-section">
+            <div class="nav-title">Account</div>
+            <div class="nav-item">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <span>Sign In</span>
+            </div>
+            <div class="nav-item">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+            </div>
+            <div class="nav-item">
+              <i class="fas fa-question-circle"></i>
+              <span>Help & Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Chat Area -->
+      <div class="chat-area">
+        <div class="chat-header">
+          <div>
+            <div class="chat-title">ZJNU Student Assistant</div>
+            <div class="chat-subtitle">
+              Find your PE class, understand your university's handbook, and
+              more!
+            </div>
+          </div>
+          <div class="user-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+
+        <div class="messages-container" id="messagesContainer">
+          <!-- Welcome Message -->
+          <div class="message bot">
+            <div class="message-avatar">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="message-content">
+              <div class="response-title">
+                👋 Welcome to ZJNU Student Assistant!
+              </div>
+              <p style="margin-top: 8px; color: var(--gray)">
+                I can help you with:
+              </p>
+              <div class="info-grid">
+                <div class="info-item">
+                  <i class="fas fa-basketball-ball"></i> PE Class Locations
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-calendar"></i> Schedules & Teachers
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-book"></i> Handbook Policies
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-graduation-cap"></i> Graduation Requirements
+                </div>
+              </div>
+              <div class="quick-actions">
+                <div
+                  class="quick-btn"
+                  onclick="askQuickQuestion('Where is basketball class?')"
+                >
+                  🏀 Basketball Class
+                </div>
+                <div
+                  class="quick-btn"
+                  onclick="askQuickQuestion('graduation requirements')"
+                >
+                  🎓 Graduation Info
+                </div>
+                <div
+                  class="quick-btn"
+                  onclick="askQuickQuestion('visa extension process')"
+                >
+                  🛂 Visa Help
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="chat-input"
+              id="chatInput"
+              placeholder="Ask about PE classes, handbook policies, or anything else..."
+            />
+            <div class="input-icon">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <button class="send-btn" onclick="askQuestion()">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- School Map Modal -->
+    <div id="schoolMapModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>ZJNU Campus Map</h2>
+          <button class="close-btn" onclick="closeSchoolMap()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="map-container">
+          <div class="map-frame">
+            <!-- You can use an image map or embed a real map service -->
+            <img
+              src="{{ url_for('static', filename='images/ZJNU_map.png') }}"
+              alt="ZJNU Campus Map"
+              class="campus-map"
+            />
+          </div>
+          <div class="map-controls">
+            <button class="map-btn" onclick="zoomIn()">
+              <i class="fas fa-search-plus"></i>
+            </button>
+            <button class="map-btn" onclick="zoomOut()">
+              <i class="fas fa-search-minus"></i>
+            </button>
+            <button class="map-btn" onclick="resetMap()">
+              <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="map-btn" onclick="downloadMap()">
+              <i class="fas fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
