@@ -331,6 +331,62 @@ footer .page-wrap {
   display: block;
 }
 
+/* App card inside Most Frequent Questions */
+.app-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+}
+
+.app-card .app-logo {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  min-height: 72px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  border: 2px solid rgba(255,255,255,0.04);
+}
+
+.app-card .app-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0; /* allow text to truncate when needed */
+}
+
+.app-title {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--text-color);
+  line-height: 1.1;
+  white-space: normal;
+}
+
+.app-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.35;
+  max-width: 100%;
+}
+
+/* Slightly smaller card image on narrow screens */
+@media (max-width: 480px) {
+  .app-card { padding: 12px; gap: 10px; }
+  .app-card .app-logo { width: 56px; height: 56px; min-width:56px; min-height:56px; }
+  .app-title { font-size: 14px; }
+  .app-desc { font-size: 12px; }
+  .info .photos-wrapper { height: 140px; }
+}
+
+@media (max-width: 768px) {
+  .app-card .app-logo { width: 64px; height: 64px; min-width:64px; min-height:64px; }
+  .app-title { font-size: 14px; }
+}
+
 .photos {
   display: flex;
   gap: 8px;
@@ -812,4 +868,7 @@ footer .page-wrap {
   .background-container {
     display: none;
   }
+}
+.btn.primary{
+  text-decoration: none;
 }
