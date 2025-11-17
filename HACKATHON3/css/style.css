@@ -1,102 +1,707 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Find My PE Class — Home</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="page-wrap">
-      <div class="topbar">
-        <div class="brand">
-          <div class="logo-ball" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <defs>
-                <pattern id="logoPattern" patternUnits="userSpaceOnUse" width="24" height="24">
-                  <image href="assets/images/Logo for fitness brand 'RunFree'.png" width="20" height="20" x="2" y="2" preserveAspectRatio="xMidYMid slice"/>
-                </pattern>
-              </defs>
-              <circle cx="12" cy="12" r="10" fill="url(#logoPattern)" />
-            </svg>
-          </div>
-          <div>
-            <h1>Find My PE Class</h1>
-            <p class="muted">Ask in English or 中文 — Student  portals</p>
-          </div>
-        </div>
+/* Shared styles for Find My PE Class demo */
+:root{
+  --bg:#071026;--card:#081526;--accent:#00d1b2;--muted:#bf9f9f;--glass: rgba(255,255,255,0.03);
+  --text-color: #eaf6f2;
+  --radius:12px;--maxw:1100px;
+}
 
-        <nav class="nav">
-          <a href="index.html" class="active">Home</a>
-          <a href="student.html">SIGN IN</a>
-          
-        </nav>
-      </div>
-    </div>
-  </header>
+/* Light theme overrides when html[data-theme="light"] is set */
+html[data-theme="light"] {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --accent: #00796b;
+  --muted: #6b7280;
+  --glass: rgba(0,0,0,0.03);
+  --text-color: #0f172a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  color:var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg,#051022,#071226);
+}
 
-  <main>
-    <div class="page-wrap">
-      <div class="container">
-        <!-- Background Image Container -->
-        <div class="background-container"></div>
-        
-        <section class="left card">
-          <div class="left-hero">
-              <p class="hero-text">🏀 Everything about ZJNU sports in one click — class locations, gyms, and events.<br>Ready to get moving? 🚀</p>
+/* Main layout sections */
+header {
+  background: var(--bg);
+  padding: 8px 0;
+  position: relative;
+  z-index: 2;
+}
 
-              <a href="chat.html" class="hero-chat-link" aria-label="Open chat">
-                <img src="assets/images/chat logo.png" alt="Open Chat" />
-              </a>
-            </div>
-        </section>
+main {
+  flex: 1;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
-      <section class="right card mapCard">
-        <!-- scene removed: no floating icons or blue orb -->
+footer {
+  background: var(--bg);
+  position: relative;
+  z-index: 2;
+  padding: 10px 0;
+}
+.page-wrap{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 12px;
+}
 
-        <div class="map" id="map">
-          <!-- school map image from assets (falls back to SVG below) -->
-          <img src="assets/images/school map.jpg" alt="School Map" class="school-map-photo" />
+header .page-wrap {
+  margin: 8px auto;
+}
 
-          <!-- only the school map photo is shown per user request -->
-        </div>
+footer .page-wrap {
+  margin: 8px auto;
+}
+.topbar{display:flex;align-items:center;gap:18px;margin-bottom:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo-ball{
+  width:40px;height:40px;
+  border-radius:8px;
+  background:linear-gradient(135deg,var(--accent),#34d399);
+  display:grid;
+  place-items:center;
+  box-shadow:0 8px 24px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo-ball:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+.brand h1{margin:0;font-size:18px}
+.muted{color:var(--muted);font-size:13px;margin:0}
+.nav{margin-left:auto;display:flex;gap:10px}
+.nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:8px;
+  transition: all 0.3s ease;
+}
+.nav a:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.nav a.active{background:rgba(255,255,255,0.03);color:var(--accent)}
+.nav a.active:hover {
+  background: rgba(255,255,255,0.08);
+}
 
-        <div class="info-cards-container">
-          <div class="info card small" id="infoPanel">
-            <h3 id="locName">MOST FREQUENT QUESTIONS</h3>
-            <p id="locDetails" class="muted">Add general information here about the pe app for example.</p>
-            <div class="photos" id="photos"></div>
-            <div class="meta" id="meta"></div>
-          </div>
+.container{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:18px;
+  position: relative;
+  z-index: 1;
+  margin: 20px auto;
+  max-width: 1200px;
+}
 
-          <div class="info card small" id="locationsPanel">
-            <h3>LOCATIONS YOU MAY NEED</h3>
-            <p class="muted">Discover all key locations on campus including sports facilities, gyms, and recreational areas.</p>
-            <div class="photos" id="locationsPhotos"></div>
-            <div class="meta" id="locationsMeta"></div>
-          </div>
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/images/school image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+.card{
+  background:rgba(8, 21, 38, 0.5);
+  padding:14px;
+  border-radius:var(--radius);
+  box-shadow:0 10px 40px rgba(2,6,23,0.3);
+  backdrop-filter:blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(2,6,23,0.7);
+}
+.left .searchRow{display:flex;gap:8px;margin-top:8px}
+.searchRow input{
+  flex:1;
+  padding:10px;
+  border-radius:10px;
+  border:0;
+  background:rgba(255,255,255,0.02);
+  color:inherit;
+  transition: all 0.3s ease;
+}
+.searchRow input:hover, input:focus {
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 0 2px rgba(0,209,178,0.2);
+}
+.btn{
+  padding:10px 12px;
+  border-radius:10px;
+  border:0;
+  background:transparent;
+  color:inherit;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.05);
+}
+.primary{background:var(--accent);color:#042024;font-weight:700}
+.primary:hover {
+  background: #00e6c4;
+  box-shadow: 0 8px 20px rgba(0,209,178,0.3);
+}
+.quickFilters{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.chip{
+  padding:8px 10px;
+  border-radius:999px;
+  border:0;
+  background:rgba(255,255,255,0.02);
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+.chip:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
-          <div class="info card small" id="teamPanel">
-            <h3>SHINING TEAM</h3>
-            <p class="muted">Meet our dedicated team members who are here to support your athletic journey.</p>
-            <div class="photos" id="teamPhotos"></div>
-            <div class="meta" id="teamMeta"></div>
-          </div>
-        </div>
-      </section>
-    </main>
+.float {
+  transition: transform 0.3s ease;
+}
+.float:hover {
+  transform: scale(1.2) !important;
+}
 
-    <footer class="foot card" style="text-align: center;">
-      <div>Copyright © 2025-2026</div>
-    </footer>
-  </div>
+.results{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.result{display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent)}
+.result .icon{width:54px;height:54px;border-radius:8px;background:rgba(255,255,255,0.03);display:grid;place-items:center;font-size:22px}
+.result .details h4{margin:0;font-size:15px}
+.result .details p{margin:4px 0 0;color:var(--muted);font-size:13px}
 
-  <!-- Floating Chat Button removed per user request -->
-  <!-- Theme toggle -->
-  <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()"><span class="theme-icon">🌙</span></button>
+/* Left card hero (index) */
+.left-hero{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:320px;
+  padding:36px 20px;
+  text-align:center;
+}
+.hero-text{
+  font-size:20px;
+  line-height:1.3;
+  font-weight:800;
+  color:var(--text-color);
+  margin:0;
+  max-width:420px;
+}
+.hero-text br{display:block;content:'';margin-bottom:6px}
+.hero-chat-link{
+  margin-top:22px;
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  display:inline-grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--accent),#34d399);
+  box-shadow:0 10px 28px rgba(2,6,23,0.45);
+  border:2px solid rgba(255,255,255,0.06);
+  transition:transform 0.18s ease, box-shadow 0.18s ease;
+  text-decoration:none;
+}
+.hero-chat-link img{width:36px;height:36px;object-fit:contain}
+.hero-chat-link:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(2,6,23,0.55)}
 
-  <script src="js/app.js"></script>
-  <script src="js/theme.js"></script>
-</body>
-</html>
+/* shrink left card to fit its content and center it in the grid cell */
+.left.card {
+  width: max-content;
+  justify-self: center;
+  align-self: center;
+  padding: 18px 22px;
+}
+
+/* floating animation for the chat CTA (moves even without hover) */
+@keyframes floaty {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-6deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+.hero-chat-link {
+  animation: floaty 3.6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* map + scene */
+.mapCard{position:relative;min-height:auto;padding:12px;overflow:hidden}
+.scene{position:absolute;left:10px;bottom:10px;width:220px;height:220px;pointer-events:none;z-index:5}
+.sphere{width:100%;height:100%;border-radius:50%;display:grid;place-items:center;transform-style:preserve-3d;will-change:transform;animation:float 6s ease-in-out infinite}
+.orb{width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #7bf0d7, #00aa8f);box-shadow:0 10px 30px rgba(0,0,0,0.25)}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+
+.floating{position:absolute;right:10px;bottom:10px;display:flex;gap:8px}
+.float{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.02);display:grid;place-items:center;transform-origin:center;animation:spin 8s linear infinite}
+@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+
+.map{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);background:#071124;padding:8px}
+.campus{width:100%;height:auto;display:block}
+.school-map-photo{display:block;width:100%;height:auto;object-fit:contain;border-radius:8px;border:0;margin-bottom:8px}
+.bld{fill:#0f2230;stroke:#0ea9a0;stroke-width:2;cursor:pointer;transition:transform .18s ease,opacity .18s ease}
+.bld:hover{transform:translateY(-6px);opacity:0.95}
+.btext{fill:#d8fbf0;font-family:Arial;font-size:16px;pointer-events:none}
+
+/* info panel */
+.info{margin-top:12px;padding:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:10px}
+.photos{display:flex;gap:8px;margin-top:8px}
+.photos img{height:72px;border-radius:8px;object-fit:cover;border:2px solid rgba(255,255,255,0.02)}
+
+/* teacher form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input, .form select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,0.02);
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.form input:hover, .form select:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(0,209,178,0.2);
+}
+
+.form input:focus, .form select:focus {
+  outline: none;
+  background: rgba(255,255,255,0.05);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0,209,178,0.1);
+}
+
+.form select {
+  appearance: none;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300d1b2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+}
+
+/* auth specific styles */
+.authRow{display:flex;gap:12px}
+.authCol{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.authCol input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: rgba(255,255,255,0.02);
+  color: inherit;
+  transition: all 0.3s ease;
+}
+.authCol input:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(0,209,178,0.2);
+}
+.authCol input:focus {
+  outline: none;
+  background: rgba(255,255,255,0.05);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0,209,178,0.1);
+}
+.authCol h3 {
+  transition: color 0.3s ease;
+}
+.authCol:hover h3 {
+  color: var(--accent);
+}
+
+/* footer hover */
+.foot.card {
+  transition: all 0.3s ease;
+}
+.foot.card:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), transparent);
+  transform: translateY(-2px);
+}
+
+/* small helpers */
+.small{flex:0 0 160px}
+.formRow{display:flex;gap:8px;margin-bottom:8px}
+
+/* Floating Chat Button */
+.floating-chat-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 60px;
+  border-radius: 30px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 25px 0 10px;
+  box-shadow: 0 4px 20px rgba(0, 209, 178, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+/* Theme toggle button (fixed top-right) */
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  color: var(--text-color);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 1100;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.theme-toggle:hover { transform: translateY(-2px); }
+.theme-toggle:active { transform: translateY(0); }
+.theme-toggle .theme-icon { font-size: 18px; }
+
+.floating-chat-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 24px rgba(0, 209, 178, 0.6);
+}
+
+.floating-chat-btn .chat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.floating-chat-btn:hover .chat-icon {
+  transform: rotate(5deg);
+}
+
+.floating-chat-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.floating-chat-btn .chat-text {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  white-space: nowrap;
+  animation: bounceText 2s infinite;
+}
+
+@keyframes bounceText {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+/* Responsive Design */
+
+/* Large Screens (Desktops) */
+@media (min-width: 1200px) {
+  .page-wrap {
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+}
+
+/* Medium Screens (Small Desktops & Tablets Landscape) */
+@media (max-width: 1199px) {
+  .page-wrap {
+    max-width: 960px;
+    padding: 0 15px;
+  }
+  
+  .container {
+    gap: 15px;
+  }
+}
+
+/* Tablet & Small Screens */
+@media (max-width: 980px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* make hero text a little larger on narrow single-column layout */
+  .hero-text{font-size:22px}
+
+  
+
+  .scene {
+    display: none;
+  }
+
+  .floating-chat-btn {
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    padding: 0 20px 0 8px;
+  }
+
+  .floating-chat-btn .chat-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .floating-chat-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .floating-chat-btn .chat-text {
+    font-size: 14px;
+  }
+
+  .left.card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .mapCard {
+    min-height: 400px;
+  }
+}
+
+/* Tablets Portrait */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .nav {
+    margin: 0 auto;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .searchRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchRow button {
+    width: 100%;
+  }
+
+  .quickFilters {
+    justify-content: center;
+  }
+
+  .map {
+    height: auto;
+  }
+
+  .campus {
+    height: auto;
+  }
+
+  /* Auth pages responsive */
+  .authRow {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 12px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  header {
+    padding: 5px 0;
+  }
+
+  .logo-ball {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand h1 {
+    font-size: 16px;
+  }
+
+  .nav {
+    gap: 5px;
+  }
+
+  .nav a {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  .container {
+    gap: 12px;
+  }
+
+  .quickFilters {
+    gap: 6px;
+  }
+
+  .chip {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .result {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .result .icon {
+    margin: 0 auto;
+  }
+
+  .photos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photos img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  /* Make buttons more touchable on mobile */
+  .btn {
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+
+  .floating-chat-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 0 16px 0 6px;
+  }
+
+  .floating-chat-btn .chat-text {
+    font-size: 13px;
+  }
+
+  /* Improve form elements for touch */
+  input, select, .chat-input {
+    min-height: 44px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  /* Adjust map for mobile */
+  .mapCard {
+    min-height: 350px;
+  }
+
+  .map {
+    height: auto;
+  }
+
+  .campus {
+    height: auto;
+  }
+
+  .btext {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 360px) {
+  .page-wrap {
+    padding: 0 10px;
+  }
+
+  .brand h1 {
+    font-size: 14px;
+  }
+
+  .muted {
+    font-size: 12px;
+  }
+
+  .nav a {
+    font-size: 13px;
+    padding: 5px 7px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* Height-based Media Queries */
+@media (max-height: 700px) {
+  .mapCard {
+    min-height: 300px;
+  }
+
+  .map {
+    height: auto;
+  }
+
+  .campus {
+    height: auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  .floating-chat-btn,
+  .quickFilters,
+  .nav {
+    display: none;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+
+  body {
+    color: #000;
+  }
+
+  .background-container {
+    display: none;
+  }
+}
