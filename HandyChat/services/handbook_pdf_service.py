@@ -12,11 +12,11 @@ import textwrap
 
 logger = logging.getLogger(__name__)
 
-# Handbook path - adjust based on your actual file location
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HANDBOOK_PATH = os.path.join(BASE_DIR, "HandyChat", "static", "handbook", "zjnu_handbook_2025.pdf")
 
-# Don't load immediately
+# Don't load the handbook text until needed
 handbook_text = None
 handbook_loaded = False
 
@@ -136,12 +136,12 @@ def smart_search(question, handbook_content):
 
 def ask_handbook_clean(question):
     """Main function to query the PDF handbook"""
-    logger.info(f"📖 PDF Handbook query: {question}")
+    logger.info(f"PDF Handbook query: {question}")
     
     try:
         content = load_handbook_text()
         if not content or len(content) < 100:
-            return "The handbook content is currently unavailable. Please try the simple handbook service or contact the International Student Office."
+            return "The handbook content is currently unavailable. Please try the JSON handbook service or contact the International Student Office."
         
         relevant_content = smart_search(question, content)
         
@@ -164,7 +164,7 @@ def ask_handbook_clean(question):
             
     except Exception as e:
         logger.error(f"Error in PDF handbook service: {e}")
-        return "I'm experiencing difficulties accessing the PDF handbook. Please try the simple handbook service or contact the International Student Office."
+        return "I'm experiencing difficulties accessing the PDF handbook. Please try the JSON handbook service or contact the International Student Office."
 
 def get_handbook_status():
     """Get the current status of the PDF handbook"""

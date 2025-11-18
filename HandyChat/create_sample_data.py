@@ -163,57 +163,41 @@ def create_sample_data():
         # Create teachers
         coach_zhang = Teacher(
             name="Coach Zhang Wei",
-            contact_info="+86 138-0011-2233",
-            email="zhang.wei@zjnu.edu",
             created_at=current_time
         )
         
         coach_li = Teacher(
             name="Coach Li Ming", 
-            contact_info="+86 139-0055-6677",
-            email="li.ming@zjnu.edu",
             created_at=current_time
         )
         
         coach_wang = Teacher(
             name="Coach Wang Fang",
-            contact_info="+86 137-0088-9944", 
-            email="wang.fang@zjnu.edu",
             created_at=current_time
         )
         
         coach_chen = Teacher(
-            name="Coach Chen Gang",
-            contact_info="+86 136-0022-3344",
-            email="chen.gang@zjnu.edu", 
+            name="Coach Chen Gang", 
             created_at=current_time
         )
         
         coach_yang = Teacher(
             name="Coach Yang Jing",
-            contact_info="+86 135-0066-7788",
-            email="yang.jing@zjnu.edu",
             created_at=current_time
         )
         
         coach_liu = Teacher(
             name="Coach Liu Mei",
-            contact_info="+86 134-0099-1122",
-            email="liu.mei@zjnu.edu",
             created_at=current_time
         )
         
         coach_zhao = Teacher(
             name="Coach Zhao Qiang",
-            contact_info="+86 133-0033-4455",
-            email="zhao.qiang@zjnu.edu",
             created_at=current_time
         )
         
         master_wu = Teacher(
             name="Master Wu Jian",
-            contact_info="+86 132-0077-8899",
-            email="wu.jian@zjnu.edu",
             created_at=current_time
         )
         
