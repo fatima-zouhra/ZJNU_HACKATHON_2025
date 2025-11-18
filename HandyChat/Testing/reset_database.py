@@ -43,7 +43,7 @@ def simple_reset():
             print("Tables created successfully")
             
             # Create sample PE data only (skip handbook for now)
-            from HandyChat.Testing.create_sample_data import create_sample_data
+            from ZJNU_HACKATHON_2025_TEAM10.HandyChat.create_sample_data import create_sample_data
             create_sample_data()
             print("Sample PE data created")
             

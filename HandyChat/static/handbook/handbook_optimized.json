@@ -1,0 +1,3165 @@
+{
+  "qa_pairs": [
+    {
+      "id": "q001",
+      "question_en": "How can I apply for or renew my student visa?",
+      "question_zh": "我如何申请或续签学习签证？",
+      "answer_en": "You need to log in to ZJNU’s online service hall (http://ehall.zjnu.edu.cn/new/indexzjnu.html) with your student ID. Upload your passport, temporary residence registration form, tuition receipt, and health check certificate. After approval, collect your documents and go to the Exit-Entry Administration Bureau in Jinhua for your visa.",
+      "answer_zh": "你需要使用学号登录浙江师范大学网上办事大厅 (http://ehall.zjnu.edu.cn/new/indexzjnu.html)，上传护照、住宿登记表、学费缴费凭证和体检证明。审核通过后，领取材料并前往金华市公安局出入境管理局办理签证。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.1 Student Visas / 学习类签证",
+      "keywords": [
+        "apply",
+        "visa",
+        "renew",
+        "student"
+      ],
+      "variations": [
+        "How to apply for or renew my student visa?",
+        "What is the process to apply for or renew my student visa?"
+      ],
+      "attachments": [
+        {
+          "type": "pdf",
+          "title": "Visa Application Guide / 签证申请指南",
+          "url": "/static/forms/visa_application_guide.pdf"
+        },
+        {
+          "type": "placeholder",
+          "title": "Visa Process Flowchart / 签证流程图",
+          "url": ""
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q002",
+      "question_en": "When should I renew my visa?",
+      "question_zh": "我什么时候需要续签签证？",
+      "answer_en": "You should renew your visa at least one month before it expires. Start the process early to avoid overstaying, which may result in penalties or restrictions.",
+      "answer_zh": "你应在签证到期前至少一个月开始续签流程。提前办理以避免逾期停留，否则可能会被罚款或受到限制。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.1 Student Visas / 学习类签证",
+      "keywords": [
+        "visa",
+        "renew",
+        "should"
+      ],
+      "variations": [
+        "When do I need to I renew my visa?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q003",
+      "question_en": "Can I work in China with a student visa?",
+      "question_zh": "持学生签证可以在中国工作吗？",
+      "answer_en": "No, students with an X visa are not allowed to work or engage in business activities without official permission. If you need to do an internship, you must apply for approval from your college and the Exit-Entry Bureau.",
+      "answer_zh": "不可以。持有学习签证（X签证）的学生不得工作或从事商业活动。如需实习，必须先向学院和出入境管理局申请批准。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.1 Student Visas / 学习类签证",
+      "keywords": [
+        "visa",
+        "china",
+        "work",
+        "student",
+        "with"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q004",
+      "question_en": "What happens if I overstay my visa?",
+      "question_zh": "如果我签证过期会怎样？",
+      "answer_en": "Overstaying your visa is a violation of Chinese law. You may face fines, warnings, or even detention. Always renew your visa on time.",
+      "answer_zh": "签证过期属于违法行为，你可能会被罚款、警告甚至拘留。请务必按时续签签证。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.1 Student Visas / 学习类签证",
+      "keywords": [
+        "happens",
+        "visa",
+        "overstay"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q005",
+      "question_en": "What should I do if I lose my passport?",
+      "question_zh": "如果我丢失护照应该怎么办？",
+      "answer_en": "First, report the loss at the nearest police station and get a ‘Lost Passport Certificate’. Then, go to the Exit-Entry Administration Bureau to get an official confirmation. Contact your embassy to reissue your passport. Once you receive the new one, re-register your residence at the police station within 10 days.",
+      "answer_zh": "首先到最近的派出所报案并领取《护照遗失证明》。然后前往出入境管理局确认。联系所在国家的大使馆补办新护照。收到新护照后，请在10天内重新到派出所登记住宿。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.2 Lost Passport / 护照遗失",
+      "keywords": [
+        "should",
+        "lose",
+        "passport"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Lost Passport Procedure / 护照遗失办理流程",
+          "url": ""
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q006",
+      "question_en": "Do I need to report my lost passport to the International Student Office?",
+      "question_zh": "我需要向国际学生办公室报告护照遗失吗？",
+      "answer_en": "Yes. After reporting the loss to the police, inform the International Student Office immediately. They will help with university documentation and provide a support letter for your embassy if needed.",
+      "answer_zh": "需要。在派出所报案后，请立即通知国际学生办公室。他们会协助你办理学校证明文件，并在需要时为你提供使馆用信。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.2 Lost Passport / 护照遗失",
+      "keywords": [
+        "need",
+        "report",
+        "lost",
+        "student",
+        "international",
+        "passport",
+        "office"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q007",
+      "question_en": "Where is the Exit-Entry Administration Bureau in Jinhua?",
+      "question_zh": "金华市出入境管理局在哪里？",
+      "answer_en": "The Exit-Entry Administration Bureau of Jinhua Public Security Bureau is located at No. 1055 Bayi North Street, Jinhua. You can take Bus BRT1 or Bus K127 to get there.",
+      "answer_zh": "金华市公安局出入境管理局地址是金华市八一北街1055号。可乘坐BRT1或K127路公交车前往。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.3 Exit-Entry Administration Bureau / 出入境管理局信息",
+      "keywords": [
+        "exit",
+        "jinhua",
+        "bureau",
+        "entry",
+        "administration"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Map to Exit-Entry Bureau / 出入境管理局地图",
+          "url": ""
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q008",
+      "question_en": "What are the office hours of the Exit-Entry Bureau?",
+      "question_zh": "出入境管理局的办公时间是什么时候？",
+      "answer_en": "The usual office hours are Monday to Friday, 8:30 AM to 11:30 AM and 1:30 PM to 5:00 PM. It is closed on weekends and public holidays.",
+      "answer_zh": "办公时间为周一至周五上午8:30至11:30，下午1:30至17:00。周末和节假日休息。",
+      "category": "Visa Application / 签证申请",
+      "subcategory": "1.3 Exit-Entry Administration Bureau / 出入境管理局信息",
+      "keywords": [
+        "exit",
+        "entry",
+        "hours",
+        "bureau",
+        "office"
+      ],
+      "variations": [
+        "What is the office hours of the Exit-Entry Bureau?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q009",
+      "question_en": "What is required to register for each semester?",
+      "question_zh": "每学期注册需要哪些条件？",
+      "answer_en": "All degree students must register at the beginning of each semester. You need to bring your student card and tuition payment receipt. Students who fail to register within the required time may lose their student status.",
+      "answer_zh": "所有学位生必须在每学期开学时注册。注册时需携带学生证和学费缴费凭证。未按时注册的学生可能会失去学籍。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1 Degree Students / 学位生",
+      "keywords": [
+        "required",
+        "semester",
+        "each",
+        "register"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q010",
+      "question_en": "What happens if I cannot register on time?",
+      "question_zh": "如果我不能按时注册怎么办？",
+      "answer_en": "If you cannot register on time due to illness or other valid reasons, you must apply for a leave of absence and get approval from your college before the registration deadline.",
+      "answer_zh": "如因病或其他正当理由不能按时注册，须在注册截止日期前向学院申请请假并获得批准。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1 Degree Students / 学位生",
+      "keywords": [
+        "happens",
+        "time",
+        "register",
+        "cannot"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q011",
+      "question_en": "How can I apply for a suspension or resumption of study?",
+      "question_zh": "我如何申请休学或复学？",
+      "answer_en": "To suspend your studies, submit a written application to your college explaining the reason. Approval must come from both your college and the International Student Office. To resume, you must apply again before the new semester begins.",
+      "answer_zh": "如需休学，需向学院提交书面申请说明原因，并经学院及国际学生办公室批准。复学需在新学期开始前重新申请。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1 Degree Students / 学位生",
+      "keywords": [
+        "apply",
+        "suspension",
+        "study",
+        "resumption"
+      ],
+      "variations": [
+        "How to apply for a suspension or resumption of study?",
+        "What is the process to apply for a suspension or resumption of study?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q012",
+      "question_en": "What are the graduation requirements for degree students?",
+      "question_zh": "学位生的毕业要求是什么？",
+      "answer_en": "Undergraduate students must complete all required credits and pass HSK Level 4. Master’s and doctoral students must complete coursework, pass thesis defense, and meet research publication requirements if applicable.",
+      "answer_zh": "本科生必须修满所有规定学分并通过HSK四级考试。硕士和博士研究生需完成课程学习、论文答辩，并达到科研发表等要求。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1 Degree Students / 学位生",
+      "keywords": [
+        "requirements",
+        "students",
+        "graduation",
+        "degree"
+      ],
+      "variations": [
+        "What is the graduation requirements for degree students?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q013",
+      "question_en": "How are grades and credits calculated?",
+      "question_zh": "成绩和学分如何计算？",
+      "answer_en": "Grades are based on attendance, assignments, midterm, and final exams. Each course has credits assigned. The final score combines these parts, and you need a minimum passing grade of 60 to earn the credit.",
+      "answer_zh": "成绩根据出勤、作业、中期考试和期末考试综合评定。每门课程有相应学分。最终成绩达到60分及以上才能获得学分。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1 Degree Students / 学位生",
+      "keywords": [
+        "credits",
+        "grades",
+        "calculated"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q014",
+      "question_en": "How can I apply for student status alteration at ZJNU?",
+      "question_zh": "我如何在浙师大申请学籍异动？",
+      "answer_en": "International students who need to change their enrollment information—such as suspension, resumption, withdrawal, or program change—must apply online through the Zhejiang Normal University Online Application System (http://admission.zjnu.edu.cn/StuApplication/Login.aspx). Log in with your student ID as the username and use the initial password 000000. After logging in, select 'Student Status Alteration' and submit the required information and documents.",
+      "answer_zh": "国际学生如需办理休学、复学、退学或转专业等学籍变更事项，须通过浙江师范大学国际学生申请系统 (http://admission.zjnu.edu.cn/StuApplication/Login.aspx) 在线申请。登录用户名为学号，初始密码为000000。登录后选择“学籍异动申请”，并提交所需信息和材料。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1.3 Application for Student Status Alteration / 学籍异动申请",
+      "keywords": [
+        "zjnu",
+        "student",
+        "apply",
+        "status",
+        "alteration"
+      ],
+      "variations": [
+        "How to apply for student status alteration at ZJNU?",
+        "What is the process to apply for student status alteration at ZJNU?"
+      ],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "Online Application System / 在线申请系统",
+          "url": "http://admission.zjnu.edu.cn/StuApplication/Login.aspx"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q015",
+      "question_en": "What browser should I use for the application?",
+      "question_zh": "申请时推荐使用哪种浏览器？",
+      "answer_en": "For a smoother experience, it is recommended to use Google Chrome or 360 Security Browser when logging into the ZJNU Online Application System.",
+      "answer_zh": "为获得更好的使用体验，建议使用谷歌浏览器或360安全浏览器登录浙江师范大学网上申请系统。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1.3 Application for Student Status Alteration / 学籍异动申请",
+      "keywords": [
+        "application",
+        "should",
+        "browser"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q016",
+      "question_en": "What changes can be made through the student status alteration system?",
+      "question_zh": "通过学籍异动系统可以办理哪些事项？",
+      "answer_en": "The system allows international students to apply for suspension or resumption of study, withdrawal, program or major change, and other official updates related to student enrollment.",
+      "answer_zh": "该系统可用于国际学生申请休学、复学、退学、转专业以及其他与学籍相关的正式变更。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1.3 Application for Student Status Alteration / 学籍异动申请",
+      "keywords": [
+        "made",
+        "system",
+        "student",
+        "status",
+        "changes",
+        "alteration",
+        "through"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q017",
+      "question_en": "Can I change my major or program?",
+      "question_zh": "我可以更换专业或学习项目吗？",
+      "answer_en": "Yes. International students can apply for a program or major change if they meet the university’s academic requirements and have approval from both their current and new colleges. The application must be submitted through the ZJNU Online Application System (http://admission.zjnu.edu.cn/StuApplication/Login.aspx). The decision is based on your grades, capacity, and program availability.",
+      "answer_zh": "可以。国际学生如符合学校学业要求并获得原学院和新学院的批准，可申请更换学习项目或专业。申请需通过浙江师范大学国际学生网上申请系统 (http://admission.zjnu.edu.cn/StuApplication/Login.aspx) 提交。是否批准取决于学生成绩、能力及专业名额。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.1.3 Application for Student Status Alteration / 学籍异动申请",
+      "keywords": [
+        "change",
+        "major",
+        "program"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "Online Application System / 在线申请系统",
+          "url": "http://admission.zjnu.edu.cn/StuApplication/Login.aspx"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q018",
+      "question_en": "Who are considered non-degree students?",
+      "question_zh": "哪些属于非学位生？",
+      "answer_en": "Non-degree students are exchange, language, or short-term students who study for a limited period without pursuing a formal degree at ZJNU.",
+      "answer_zh": "非学位生包括交换生、语言生和短期进修生，他们在浙师大学习一定时间，但不攻读学位。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2 Non-Degree Students / 非学位生",
+      "keywords": [
+        "students",
+        "considered",
+        "degree"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q019",
+      "question_en": "Do non-degree students need to take exams?",
+      "question_zh": "非学位生需要参加考试吗？",
+      "answer_en": "Yes. Non-degree students must attend classes, complete coursework, and take exams or assessments arranged by the teachers. Attendance and performance affect the final evaluation.",
+      "answer_zh": "需要。非学位生必须上课、完成课程作业并参加教师安排的考试或测评。出勤率和表现会影响最终评定。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2 Non-Degree Students / 非学位生",
+      "keywords": [
+        "need",
+        "take",
+        "degree",
+        "exams",
+        "students"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q020",
+      "question_en": "Can non-degree students get certificates?",
+      "question_zh": "非学位生能获得证书吗？",
+      "answer_en": "Yes. Upon successful completion of courses, non-degree students can receive a study certificate issued by ZJNU.",
+      "answer_zh": "可以。非学位生完成课程后，可获得浙江师范大学颁发的学习结业证书。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2 Non-Degree Students / 非学位生",
+      "keywords": [
+        "certificates",
+        "students",
+        "degree"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q021",
+      "question_en": "Can non-degree students transfer to degree programs?",
+      "question_zh": "非学位生可以转为学位生吗？",
+      "answer_en": "Yes, but only under special conditions. You must meet the admission requirements for degree programs and apply through the International Student Office.",
+      "answer_zh": "可以，但需满足相应条件。需符合学位项目的入学要求，并通过国际学生办公室申请。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2 Non-Degree Students / 非学位生",
+      "keywords": [
+        "transfer",
+        "students",
+        "degree",
+        "programs"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q022",
+      "question_en": "Where do non-degree Chinese language students register?",
+      "question_zh": "非学位汉语进修生在哪里注册？",
+      "answer_en": "New non-degree Chinese language students must register at the College of International Culture and Social Development (Building 24) on the date listed in their Letter of Admission. If you cannot register on time due to valid reasons, submit a written leave request before the registration day. A delay of up to two weeks may be approved. Failure to apply for leave or register on time will cancel your admission.",
+      "answer_zh": "新入学的非学位汉语进修生须在录取通知书指定日期，到国际文化与社会发展学院（24号楼）报到注册。如因正当理由无法按时报到，须在注册日前提交书面请假申请。最多可延期两周。未请假或未按时报到者，录取资格将自动取消。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.1 Non-degree Chinese Language Students / 非学位汉语进修生",
+      "keywords": [
+        "chinese",
+        "degree",
+        "language",
+        "students",
+        "register"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q023",
+      "question_en": "What documents are required for registration?",
+      "question_zh": "注册时需要提交哪些材料？",
+      "answer_en": "You need to bring the following documents: passport, Letter of Admission, JW202/201 or DQ form, Registration Form of Temporary Residence, 4 passport photos, and a housing lease agreement (if living off campus).",
+      "answer_zh": "注册时需提交以下材料：护照、录取通知书、JW202/201或DQ表、临时住宿登记表、4张证件照片、以及租房合同（如校外住宿）。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.1 Non-degree Chinese Language Students / 非学位汉语进修生",
+      "keywords": [
+        "required",
+        "registration",
+        "documents"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q024",
+      "question_en": "How are courses arranged for non-degree Chinese language students?",
+      "question_zh": "非学位汉语进修生的课程如何安排？",
+      "answer_en": "Students are placed in different classes based on their Chinese level. The College of International Culture and Social Development arranges the courses and textbooks. You must attend classes and take the semester exams. Passing students receive a Certificate of Course Completion.",
+      "answer_zh": "根据学生的汉语水平分班，课程和教材由国际文化与社会发展学院统一安排。学生须按时上课并参加学期考试。考试合格者可获得课程结业证书。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.1 Non-degree Chinese Language Students / 非学位汉语进修生",
+      "keywords": [
+        "chinese",
+        "degree",
+        "language",
+        "courses",
+        "students",
+        "arranged"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q025",
+      "question_en": "Can I get a new certificate if my Course Completion Certificate is lost or damaged?",
+      "question_zh": "如果课程结业证书遗失或损坏，可以补办吗？",
+      "answer_en": "No, replacement certificates are not issued. However, you can apply to the College of International Culture and Social Development for a Declaration of Study, which confirms your course completion status.",
+      "answer_zh": "不能补发。可向国际文化与社会发展学院申请学习声明，以证明课程完成情况。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.1 Non-degree Chinese Language Students / 非学位汉语进修生",
+      "keywords": [
+        "course",
+        "certificate",
+        "lost",
+        "completion",
+        "damaged"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q026",
+      "question_en": "How can I extend my study period as a non-degree Chinese language student?",
+      "question_zh": "作为非学位汉语进修生，如何申请延长学习时间？",
+      "answer_en": "You must apply for an extension at least one month before the semester ends. Submit your request to the College of International Culture and Social Development. Only after approval can you extend your study and complete the necessary formalities.",
+      "answer_zh": "如需延长学习时间，须在学期结束前一个月向国际文化与社会发展学院提出申请。经批准后方可延长学习并办理相关手续。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.1 Non-degree Chinese Language Students / 非学位汉语进修生",
+      "keywords": [
+        "chinese",
+        "degree",
+        "period",
+        "language",
+        "student",
+        "study",
+        "extend"
+      ],
+      "variations": [
+        "How to extend my study period as a non-degree Chinese language student?",
+        "What is the process to extend my study period as a non-degree Chinese language student?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q027",
+      "question_en": "What is a Declaration of Study?",
+      "question_zh": "什么是学习声明？",
+      "answer_en": "A Declaration of Study is an official document issued by the College of International Culture and Social Development confirming your study history at ZJNU. You can request it if you need proof of your study experience.",
+      "answer_zh": "学习声明是由国际文化与社会发展学院出具的正式文件，用于证明你在浙师大的学习经历。可根据需要申请。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.1 Non-degree Chinese Language Students / 非学位汉语进修生",
+      "keywords": [
+        "study",
+        "declaration"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q028",
+      "question_en": "Where should non-degree students with a declared major register?",
+      "question_zh": "非学位专业进修生应在哪里注册？",
+      "answer_en": "You must report to the International Student Office and register at the college listed in your Letter of Admission on the designated day. If you cannot register on time for valid reasons, you may request up to two weeks of delay by submitting a written application before the registration date. Failing to register or apply for leave will result in loss of admission.",
+      "answer_zh": "需在录取通知书指定日期，到国际学生办公室及录取学院报到注册。如因正当理由不能按时报到，须在注册日前提交书面请假申请，延期最多两周。未请假或未注册者，录取资格将自动取消。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.2 Non-degree Students with a Declared Major / 非学位专业进修生",
+      "keywords": [
+        "degree",
+        "register",
+        "should",
+        "with",
+        "students",
+        "declared",
+        "major"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q029",
+      "question_en": "What documents are needed for registration?",
+      "question_zh": "注册需要哪些文件？",
+      "answer_en": "You must bring your passport, Letter of Admission, JW202/201 or DQ form, Registration Form of Temporary Residence, 4 photos, and lease agreement if living off campus.",
+      "answer_zh": "注册时须携带护照、录取通知书、JW202/201或DQ表、临时住宿登记表、4张照片以及租房合同（如校外住宿）。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.2 Non-degree Students with a Declared Major / 非学位专业进修生",
+      "keywords": [
+        "registration",
+        "needed",
+        "documents"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q030",
+      "question_en": "Who arranges the courses for non-degree students with a declared major?",
+      "question_zh": "非学位专业进修生的课程由谁安排？",
+      "answer_en": "The courses for non-degree students with a declared major are arranged by their respective colleges. All international students must take exams at the end of each semester.",
+      "answer_zh": "非学位专业进修生的课程由所属学院安排。所有国际学生都必须参加学期末考试。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.2 Non-degree Students with a Declared Major / 非学位专业进修生",
+      "keywords": [
+        "degree",
+        "courses",
+        "arranges",
+        "with",
+        "students",
+        "declared",
+        "major"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q031",
+      "question_en": "Can I get a certificate after finishing my courses?",
+      "question_zh": "完成课程后可以获得证书吗？",
+      "answer_en": "Yes. If you pass all required courses, you will receive a Certificate of Course Completion. Students who fail exams or skip required courses will not receive the certificate.",
+      "answer_zh": "可以。通过所有必修课程后可获得课程结业证书。未参加考试或未通过者将无法获得证书。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.2 Non-degree Students with a Declared Major / 非学位专业进修生",
+      "keywords": [
+        "finishing",
+        "after",
+        "certificate",
+        "courses"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q032",
+      "question_en": "How can I extend my study period as a non-degree student with a declared major?",
+      "question_zh": "作为非学位专业进修生，如何申请延长学习时间？",
+      "answer_en": "Submit an application to the International Student Office at least 30 days before your program ends. Extension requests are only valid after official approval.",
+      "answer_zh": "需在课程结束前30天向国际学生办公室提交延长学习申请。经批准后方可延期学习。",
+      "category": "Academic Affairs / 学业指南",
+      "subcategory": "2.2.2 Non-degree Students with a Declared Major / 非学位专业进修生",
+      "keywords": [
+        "degree",
+        "period",
+        "student",
+        "study",
+        "with",
+        "declared",
+        "extend",
+        "major"
+      ],
+      "variations": [
+        "How to extend my study period as a non-degree student with a declared major?",
+        "What is the process to extend my study period as a non-degree student with a declared major?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q033",
+      "question_en": "How should international students pay their tuition?",
+      "question_zh": "国际学生如何缴纳学费？",
+      "answer_en": "All tuition and related fees must be settled in RMB. Tuition can be paid per semester. Students must pay tuition before registration and visa processing. Payment is made through the Zhejiang Normal University Online Application System (http://admission.zjnu.edu.cn/StuApplication/Login.aspx) using your Student ID as username and 000000 as the initial password. For best results, use Google Chrome or 360 Security Browser.",
+      "answer_zh": "所有国际学生费用均以人民币结算。学费可按学期缴纳。未缴清学费不得注册或办理签证。请登录浙江师范大学国际学生网上申请系统 (http://admission.zjnu.edu.cn/StuApplication/Login.aspx)，用户名为学号，初始密码为000000。推荐使用谷歌或360安全浏览器。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "international",
+        "tuition",
+        "should",
+        "students",
+        "their"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "ZJNU Online Payment System / 浙江师范大学缴费系统",
+          "url": "http://admission.zjnu.edu.cn/StuApplication/Login.aspx"
+        },
+        {
+          "type": "pdf",
+          "title": "Tuition Payment Guide / 学费缴纳指南",
+          "url": "attachments/guides/tuition_payment_guide.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q034",
+      "question_en": "When is the tuition payment deadline?",
+      "question_zh": "学费缴纳的截止时间是什么时候？",
+      "answer_en": "Tuition must be paid no later than the end of the second week of each new semester. Failure to pay within 15 days after the semester begins will automatically cancel your admission, and it will be treated as withdrawal by ZJNU.",
+      "answer_zh": "每学期第二周末前必须缴清学费。开学15 天后仍未缴费的，学籍将自动取消，视为主动退学。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "deadline",
+        "payment",
+        "tuition"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q035",
+      "question_en": "What should I do if I cannot pay tuition on time?",
+      "question_zh": "如果我不能按时缴纳学费怎么办？",
+      "answer_en": "If special circumstances prevent on-time payment, submit a written application for tuition deferment to your college’s Student Management Office before the deadline. If the deferment is denied, you must pay immediately. Students who fail to pay after rejection will lose their admission status.",
+      "answer_zh": "如因特殊情况不能按时缴费，须在截止日前向学院学生管理办公室提交书面缓缴申请。若申请未获批准，须立即缴费，否则学籍将被取消。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "time",
+        "tuition",
+        "should",
+        "cannot"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Tuition Deferment Application Form / 学费缓缴申请表",
+          "url": "attachments/forms/tuition_deferment_form.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q036",
+      "question_en": "How much are the tuition and other fees?",
+      "question_zh": "学费及其他费用是多少？",
+      "answer_en": "Application fee 400 RMB; Insurance 800 RMB per year. Tuition per academic year: Non-degree 14 000; BA 18 000; MA (Chinese) 22 000; MA (English) 24 000; MBA 26 000; PhD (Chinese) 25 000; PhD (English) 27 000. Textbooks: Non-degree students buy their own; Undergraduates 800 RMB (1st yr), 500 RMB (2nd–4th yr); MA and PhD buy their own.",
+      "answer_zh": "申请费400 元；保险800 元/年。学费标准（每学年）：非学位生14 000 元；本科生18 000 元；硕士（中文授课）22 000 元；硕士（英文授课）24 000 元；MBA 26 000 元；博士（中文授课）25 000 元；博士（英文授课）27 000 元。教材费：非学位生自购；本科一年级800 元，二至四年级各500 元；硕博生自购。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "fees",
+        "other",
+        "much",
+        "tuition"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q037",
+      "question_en": "Can I get a tuition refund if I withdraw?",
+      "question_zh": "退学后可以退学费吗？",
+      "answer_en": "Refunds are in RMB. Application fees and insurance are non-refundable. Expelled students receive no refund. If you withdraw **before** the semester starts (with valid paper proof and visa cancellation), you get a full refund. If you withdraw **within the first two weeks**, you must pay 30% of one semester’s tuition. After two weeks, no refund is given. During vacations, withdrawals within two weeks after visa issuance pay 30%; after two weeks, no refund.",
+      "answer_zh": "退费以人民币结算。申请费和保险费不退。因违法或违规被开除者不退费。若在学期开始前（凭纸质证明并注销签证）退学，可全额退还当学期学费；若在开学两周内退学，需缴纳当学期学费的30%；超过两周不退。假期期间，签证发放两周内退学缴纳30%，超过两周不退。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "refund",
+        "tuition",
+        "withdraw"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q038",
+      "question_en": "What is the procedure for a tuition refund?",
+      "question_zh": "学费退款的办理流程是什么？",
+      "answer_en": "1️⃣ Go to your college Student Management Office to complete withdrawal and disengagement procedures. 2️⃣ Bring passport (copy included), withdrawal forms, and bank details (WeChat/Alipay allowed) to fill the refund application. 3️⃣ The college verifies and sends it to the International Office, then to the Office of Budget & Finance (Room 141, Administration Building). 4️⃣ If you cannot apply personally, you may entrust someone with signed authorization and ID copies.",
+      "answer_zh": "1️⃣ 先到学院学生管理办公室办理退学及离校手续；2️⃣ 携护照及复印件、退学表、离校表、银行卡信息（或微信/支付宝原支付账户）填写退费申请；3️⃣ 学院审核后报国际学生办公室，再送财务处（行政楼北翼141室）审批；4️⃣ 无法本人办理者，可委托他人，须提供签字的委托书及本人和受托人身份证件复印件。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "procedure",
+        "refund",
+        "tuition"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Withdrawal and Refund Checklist / 退学与退费清单",
+          "url": "attachments/forms/withdrawal_checklist.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q039",
+      "question_en": "How is tuition charged for deferred graduation?",
+      "question_zh": "延迟毕业的学费如何计算？",
+      "answer_en": "Students may defer graduation for up to 2 years with approval. Tuition rate: BA 100% of standard; MA 50%; PhD 20%.",
+      "answer_zh": "经批准，学生可延期毕业最多两年。延迟期间学费标准：本科生按学费标准100%；硕士按50%；博士按20%。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.1 Tuition and Other Fees / 学费及其他费用",
+      "keywords": [
+        "graduation",
+        "charged",
+        "tuition",
+        "deferred"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q040",
+      "question_en": "Where can I find dormitory information?",
+      "question_zh": "在哪里可以查看宿舍信息？",
+      "answer_en": "International students can check details and photos of Qiming and Guojiao apartments on the International Student Office website.",
+      "answer_zh": "国际学生可在国际学生办公室网站查看启明和国教公寓的详细信息和照片。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "find",
+        "dormitory",
+        "information"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "ZJNU International Student Housing Info / 浙师大国际学生宿舍信息",
+          "url": ""
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q041",
+      "question_en": "How can I apply for on-campus housing?",
+      "question_zh": "如何申请校内住宿？",
+      "answer_en": "Registered international students can apply through their college Student Management Office, which submits requests to the International Student Office for approval.",
+      "answer_zh": "已注册的国际学生可通过学院学生管理办公室申请，由学院上报国际学生办公室审批。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "apply",
+        "housing",
+        "campus"
+      ],
+      "variations": [
+        "How to apply for on-campus housing?",
+        "What is the process to apply for on-campus housing?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q042",
+      "question_en": "What are the dormitory check-in requirements and fees?",
+      "question_zh": "入住学生公寓需要哪些手续和费用？",
+      "answer_en": "Bring your passport and Residence Permit to check in. Pay the full semester rent (Qiming 2250 RMB; Guojiao 3000 RMB), plus a 500 RMB deposit and 50 RMB for the room card. Keep the deposit slip for refund.",
+      "answer_zh": "凭护照和居留许可入住。须缴纳一学期住宿费（启明2250 元；国教3000 元）、500 元押金及50 元门卡费，并妥善保管押金单以备退还。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "requirements",
+        "dormitory",
+        "fees",
+        "check"
+      ],
+      "variations": [
+        "What is the dormitory check-in requirements and fees?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q043",
+      "question_en": "What are the main dormitory rules?",
+      "question_zh": "宿舍的主要规定有哪些？",
+      "answer_en": "Residents must obey laws and university rules; no room swaps without approval; return before 23:00; no smoking, drinking or fighting; keep rooms clean; save electricity and water; no high-power appliances without permission; no overnight visitors.",
+      "answer_zh": "住宿生须遵守法律与校规；未经批准不得私自换房；23:00前返回宿舍；禁止吸烟、酗酒、打架；保持房间整洁；节约水电；未经许可不得使用大功率电器；禁止留宿他人。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "dormitory",
+        "rules",
+        "main"
+      ],
+      "variations": [
+        "What is the main dormitory rules?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q044",
+      "question_en": "What appliances are allowed in dorm rooms?",
+      "question_zh": "宿舍允许使用哪些电器？",
+      "answer_en": "Allowed items include desk lamp, laptop, charger, hair dryer, washing machine, refrigerator, fan, and water boiler (≤1500 W with auto protection). Any device over 300 W must be registered and labeled within two weeks.",
+      "answer_zh": "可使用的电器包括台灯、电脑、充电器、吹风机、洗衣机、冰箱、电风扇及功率≤1500 W且带自保功能的电热水壶。功率超过300 W的电器须在两周内登记并贴安全标识。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "rooms",
+        "appliances",
+        "allowed",
+        "dorm"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q045",
+      "question_en": "What happens if I violate dormitory regulations?",
+      "question_zh": "违反宿舍管理规定会怎样？",
+      "answer_en": "Violations lead to disciplinary actions under the Regulations on Disciplinary Action for International Students of ZJNU. Serious offenders may lose their right to on-campus residence.",
+      "answer_zh": "违反宿舍管理规定者将依据《浙江师范大学国际学生纪律处分规定》处理，情节严重者将被取消校内住宿资格。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "happens",
+        "violate",
+        "dormitory",
+        "regulations"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q046",
+      "question_en": "How do I check out from the dormitory?",
+      "question_zh": "如何办理退宿手续？",
+      "answer_en": "Check out when graduated, suspended, moving out, or program ends. Notify management 3 days in advance, remove belongings, return keys, and settle bills. Without official approval and college/ISO sign-off, your deposit won’t be refunded.",
+      "answer_zh": "毕业、休学、退宿或课程结束时须办理退宿。需提前三天通知管理处，清空物品、交还钥匙并结清费用。未经学院和国际学生办公室批准，不退押金。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.2 On-Campus Residence / 校内住宿",
+      "keywords": [
+        "dormitory",
+        "from",
+        "check"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q047",
+      "question_en": "Can international students live off campus?",
+      "question_zh": "国际学生可以在校外居住吗？",
+      "answer_en": "Yes, with permission. You must choose housing approved by the Public Security Bureau and register your residence at the local police station within 24 hours of moving in. Unregistered students are not allowed to stay off campus.",
+      "answer_zh": "可以，但须经批准。须选择公安局认可的带门禁系统的住房，并在入住24 小时内到派出所登记住宿，未登记者不得居住校外。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.3 Off-Campus Residence / 校外住宿",
+      "keywords": [
+        "international",
+        "students",
+        "live",
+        "campus"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q048",
+      "question_en": "What are the police stations near ZJNU for residence registration?",
+      "question_zh": "浙师大附近办理住宿登记的派出所在哪里？",
+      "answer_en": "You can register at Xinshi Police Station (Beishan Road, near New Century School, Tel: 0579-89118110) or New Silk Road Joint Service Police Station (near Tongxin Road, Wucheng District, Tel: 0579-82465110).",
+      "answer_zh": "可到新狮派出所（婺城区北山路，近新世纪学校，电话：0579-89118110）或新丝路联合服务警务站（婺城区同心路与新高村街交叉口160米处，电话：0579-82465110）办理住宿登记。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.3 Off-Campus Residence / 校外住宿",
+      "keywords": [
+        "police",
+        "zjnu",
+        "residence",
+        "near",
+        "registration",
+        "stations"
+      ],
+      "variations": [
+        "What is the police stations near ZJNU for residence registration?"
+      ],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Police Station Locations / 派出所位置地图",
+          "url": ""
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q049",
+      "question_en": "What are the behavior rules for off-campus living?",
+      "question_zh": "校外住宿应遵守哪些行为规范？",
+      "answer_en": "Respect neighbors and keep the environment clean. No loud noise, fighting, drunkenness, or illegal activities. Pay rent on time and follow Chinese laws, traffic rules, and religious regulations.",
+      "answer_zh": "应文明居住，保持环境整洁。不得制造噪音、酗酒、打架或从事违法活动。按时缴租，遵守中国法律、交通及宗教管理规定。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.3 Off-Campus Residence / 校外住宿",
+      "keywords": [
+        "behavior",
+        "rules",
+        "living",
+        "campus"
+      ],
+      "variations": [
+        "What is the behavior rules for off-campus living?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q050",
+      "question_en": "What is the procedure to register off-campus residence?",
+      "question_zh": "校外住宿的登记流程是什么？",
+      "answer_en": "1️⃣ Choose a qualified house with public-security-approved access control. 2️⃣ Sign a lease with the landlord. 3️⃣ Go to the local police station for the Temporary Residence Registration Form. 4️⃣ Submit the form, lease, and passport to your college office to sign the Commitment and Registration Forms for Off-Campus Residence. 5️⃣ Register address with the Neighborhood Committee. 6️⃣ Report any changes of address immediately.",
+      "answer_zh": "1️⃣ 选择公安机关批准的带门禁住房；2️⃣ 与房东签署租赁合同；3️⃣ 携合同与护照到派出所办理《境外人员临时住宿登记表》；4️⃣ 将登记表、合同及护照交学院学生管理办公室签署《浙江师范大学国际学生校外住宿承诺书》和《校外住宿登记表》；5️⃣ 到居委会登记地址；6️⃣ 变更住所时及时报备。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.3 Off-Campus Residence / 校外住宿",
+      "keywords": [
+        "procedure",
+        "residence",
+        "register",
+        "campus"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q051",
+      "question_en": "Which regulations govern international student management at ZJNU?",
+      "question_zh": "国际学生的管理依据哪些规定？",
+      "answer_en": "Student management follows the Handbook for International Students, Detailed Implementing Regulations on Student Status (Revised), Graduate Student Administration Rules, Disciplinary Action Regulations, and Attendance Warning System for International Students at ZJNU.",
+      "answer_zh": "国际学生管理依据《浙江师范大学国际学生手册》《浙江师范大学国际学生学籍管理实施细则（修订）》《研究生学籍管理规定》《国际学生纪律处分规定》《国际学生考勤预警办法》等文件执行。",
+      "category": "Regulations on Tuition and Accommodation / 学费与住宿规定",
+      "subcategory": "3.4 Additional Notes / 附则",
+      "keywords": [
+        "which",
+        "student",
+        "international",
+        "management",
+        "govern",
+        "zjnu",
+        "regulations"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q052",
+      "question_en": "How do I purchase the ZJNU international student insurance?",
+      "question_zh": "我该如何购买浙师大国际学生保险？",
+      "answer_en": "All international students are required by Chinese law to have valid medical and accident insurance during their study in China. The ZJNU insurance fee is 800 RMB per year. You can buy or renew the insurance through two methods: (1) Mobile phone purchase – scan the official QR code provided by the university and follow the payment instructions, or (2) Website purchase – visit the insurance provider’s website at http://www.lxbx.net and complete payment online. You will receive electronic proof of insurance after successful payment. Make sure to renew your insurance every academic year before registration.",
+      "answer_zh": "根据中国法律，所有在华学习的国际学生都必须购买有效的医疗和意外伤害保险。浙师大学生保险费用为每年800元人民币。购买或续保有两种方式：（1）手机购买——扫描学校提供的官方二维码并按照提示支付；（2）网站购买——登录保险公司官网 http://www.lxbx.net 并在线完成缴费。支付成功后会收到电子版保险凭证。请在每学年注册前完成续保。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "insurance",
+        "purchase",
+        "student",
+        "international",
+        "zjnu"
+      ],
+      "variations": ["how to buy an insurance?"],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "Insurance Provider Website / 保险公司官网",
+          "url": "http://www.lxbx.net"
+        },
+        {
+          "type": "placeholder",
+          "title": "Insurance Purchase / 购买保险",
+          "url": "attachments/guides/insurance_purchase_guide.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q053",
+      "question_en": "What does the ZJNU international student insurance cover?",
+      "question_zh": "浙师大国际学生保险包括哪些保障？",
+      "answer_en": "The ZJNU international student insurance covers both medical treatment and accidental injuries during your study in China. Outpatient costs are covered after you pay a 650 RMB deductible, with 85% reimbursement up to 600 RMB per day. Inpatient (hospitalization) costs are covered 100%, excluding personal self-paid items. It also covers nursing fees up to 300 RMB per day (no more than 60 days). The insurance is valid only in public hospitals, including the ZJNU Hospital, Jinhua Central Hospital, Jinhua People’s Hospital, and Jinhua Hospital of Traditional Chinese Medicine. Dental care for medical reasons like tooth decay, infection, or cracked teeth is covered, but cosmetic dental work such as whitening, braces, or implants is not. The insurance does not cover private hospitals, pregnancy, HIV/AIDS, plastic surgery, high-risk sports, or accidents caused by alcohol or drugs.",
+      "answer_zh": "浙师大国际学生保险包括在中国学习期间的医疗和意外伤害保障。门诊费用需先自付650元免赔额，之后85%可报销，每日最高600元。住院费用可报销100%，但不含个人自费项目。护理费最高300元/天（不超过60天）。保险仅适用于公立医院，包括浙江师范大学校医院、金华市中心医院、金华市人民医院、金华市中医院。牙科治疗如蛀牙、感染或牙裂等医疗原因可报销，但美容类牙科（如美白、矫正、种植牙等）不在报销范围。保险不涵盖私立医院、怀孕、艾滋病、整形手术、高风险运动或因饮酒和吸毒造成的事故。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "cover",
+        "insurance",
+        "student",
+        "international",
+        "zjnu"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "Insurance Provider Website / 保险公司官网",
+          "url": "http://www.lxbx.net"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q054",
+      "question_en": "How do I make a medical insurance claim?",
+      "question_zh": "如何申请医疗保险理赔？",
+      "answer_en": "Call 400-810-5119-1. Provide your passport number and describe your illness or accident. The company will guide you through outpatient or inpatient advance payment steps.",
+      "answer_zh": "拨打400-810-5119-1，提供护照号并说明病情或意外情况。保险公司会指导您进行门诊或住院垫付手续。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "claim",
+        "make",
+        "medical",
+        "insurance"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Insurance Claim Flowchart / 保险理赔流程图",
+          "url": "attachments/guides/insurance_claim_guide.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q055",
+      "question_en": "What documents are needed for outpatient claims?",
+      "question_zh": "门诊报销需要哪些材料？",
+      "answer_en": "You must collect: (1) original valid invoice (not payment voucher), (2) detailed medical record labeled 'medical record', (3) examination reports and prescriptions, (4) your bank account information, and (5) an accident report if applicable. Submit materials via the self-service claim terminal or scan the QR code provided by the insurance company.",
+      "answer_zh": "须提供：(1) 正规发票原件（非付款凭证）；(2) 标有“病历”的就诊记录；(3) 检查报告与处方；(4) 银行账户信息；(5) 若为意外受伤，需附事故说明书。通过自助理赔终端提交材料或扫描保险公司提供的二维码。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "outpatient",
+        "claims",
+        "needed",
+        "documents"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Outpatient Claim QR Code / 门诊理赔二维码",
+          "url": "attachments/images/outpatient_claim_qr.png"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q056",
+      "question_en": "How to claim hospitalization expenses?",
+      "question_zh": "住院费用如何报销？",
+      "answer_en": "If you applied for advance payment, provide materials requested by the insurer. If not, collect: formal invoice, detailed expense list, discharge summary, and your bank information. Submit materials through the self-service claim portal and follow later instructions from the insurer.",
+      "answer_zh": "如申请垫付，按公司要求提供材料；如未垫付，请出院时收集正规发票、费用清单、出院小结及银行信息。通过自助理赔平台提交，按保险公司通知办理。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "expenses",
+        "claim",
+        "hospitalization"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q057",
+      "question_en": "Which hospitals can I visit under ZJNU insurance?",
+      "question_zh": "浙师大保险可报销哪些医院？",
+      "answer_en": "Public hospitals: Hospital of ZJNU (Tel: 0579-82283120), Jinhua Central Hospital (351 Mingyue Street, Tel 0579-82338512), Jinhua People’s Hospital (267 Danxi East Road, Tel 0579-89137722), and Jinhua Hospital of Traditional Chinese Medicine (439 Shuangxi West Road, Tel 0579-82136789). Call 120 for emergencies.",
+      "answer_zh": "可就诊的公立医院包括：浙师大校医院（0579-82283120）、金华市中心医院（明月街351号 0579-82338512）、金华市人民医院（丹溪东路267号 0579-89137722）、金华市中医院（双溪西路439号 0579-82136789）。紧急情况请拨打120。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "insurance",
+        "which",
+        "hospitals",
+        "visit",
+        "under",
+        "zjnu"
+      ],
+      "variations": ["What hospital can I visit under ZJNU insurance?"],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Jinhua Public Hospitals Map / 金华公立医院地图",
+          "url": ""
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q058",
+      "question_en": "What medical expenses are not covered by insurance?",
+      "question_zh": "保险不报销哪些医疗费用？",
+      "answer_en": "The insurer will not cover: self-injury, crime-related incidents, drug or alcohol abuse, driving under the influence, plastic or cosmetic surgery, pregnancy or childbirth, congenital diseases, AIDS or STDs, experimental or unapproved treatments, or cases not reported via the 400 hotline before treatment.",
+      "answer_zh": "保险不承担以下情况：自伤、犯罪、吸毒或酗酒、醉驾、美容整形、妊娠及分娩、先天性疾病、艾滋病或性病、实验性治疗，以及未提前拨打400热线报备的情况。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "expenses",
+        "medical",
+        "covered",
+        "insurance"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q059",
+      "question_en": "What are the main reimbursement rates?",
+      "question_zh": "保险报销比例是多少？",
+      "answer_en": "Outpatient: 85% above a 650 RMB daily threshold (max 600 RMB per day). Inpatient: 100% for approved items. Nursing fee capped at 300 RMB/day, ≤ 60 days.",
+      "answer_zh": "门诊：每日起付额650元，超出部分按85%报销，每日最高600元。住院：符合规定的项目报销100%，护理费每日报销上限300元，不超过60天。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "reimbursement",
+        "main",
+        "rates"
+      ],
+      "variations": [
+        "What is the main reimbursement rates?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q060",
+      "question_en": "Where is the insurance company office?",
+      "question_zh": "保险公司地址和联系方式是什么？",
+      "answer_en": "Team for Insurance of International Students, 1901A, 19F Touzi Plaza, 27 Finance Street, Xicheng District, Beijing 100033. Tel 400-810-5119.",
+      "answer_zh": "国际学生保险团队：北京市西城区金融大街27号投资广场19层1901A 邮编100033 电话400-810-5119。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.1 Insurance for International Students / 国际学生保险",
+      "keywords": [
+        "company",
+        "insurance",
+        "office"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q061",
+      "question_en": "What is the ZJNU Smart Card used for?",
+      "question_zh": "浙师大校园卡有什么用途？",
+      "answer_en": "The Smart Card serves as your library card, dining card, and scholarship payment card. It also contains your student info via a QR code, which can be used for identity verification by campus police.",
+      "answer_zh": "校园卡可作为图书证、餐卡和奖学金发放卡使用。卡上带有二维码，可用于警务身份核查。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.2 ZJNU Smart Card / 校园一卡通",
+      "keywords": [
+        "smart",
+        "used",
+        "zjnu",
+        "card"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Smart Card Sample / 校园卡样例",
+          "url": "attachments/images/smartcard_sample.png"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q062",
+      "question_en": "How to recharge or replace my Smart Card?",
+      "question_zh": "如何充值或补办校园卡？",
+      "answer_en": "Recharge via Alipay or the '易校园' App, or at the Logistics Group Service Hall. Report lost cards immediately; after 3 days, you can apply for a new one with your passport.",
+      "answer_zh": "可通过支付宝、“易校园”APP或后勤服务大厅充值。遗失后应立即挂失，三天后凭护照补办新卡。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.2 ZJNU Smart Card / 校园一卡通",
+      "keywords": [
+        "smart",
+        "replace",
+        "recharge",
+        "card"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "易校园 App Download / 易校园应用下载",
+          "url": "https://apps.apple.com/cn/app/%E6%98%93%E6%A0%A1%E5%9B%AD/id1247252186"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q063",
+      "question_en": "How to activate the campus Internet service?",
+      "question_zh": "如何开通宿舍网络？",
+      "answer_en": "Connect to Wi-Fi and open http://10.63.63.64:8000/Self. Log in with your student ID and password, then bind your mobile number. Reconnect and log in via 10.63.63.63 to access the Internet.",
+      "answer_zh": "连接宿舍Wi-Fi后访问 http://10.63.63.64:8000/Self ，使用学号和密码登录并绑定手机号。重新连接Wi-Fi后访问 10.63.63.63 登录即可上网。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.3 Internet Service / 网络服务",
+      "keywords": [
+        "activate",
+        "internet",
+        "service",
+        "campus"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Campus Network Setup Screenshot / 校园网设置截图",
+          "url": "attachments/images/campus_wifi_setup.png"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q064",
+      "question_en": "Is there free Wi-Fi on campus?",
+      "question_zh": "校园内有免费Wi-Fi吗？",
+      "answer_en": "Yes. Network name: ZJNU. Account: student ID number. Initial password: last 6 digits of passport number. For help call 0579-82298905.",
+      "answer_zh": "有的。网络名称：ZJNU；账号：学号；初始密码：护照号后6位。如需帮助请拨0579-82298905。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.3 Internet Service / 网络服务",
+      "keywords": [
+        "free",
+        "there",
+        "campus"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q065",
+      "question_en": "Where can I find university announcements online?",
+      "question_zh": "在哪里可以查看学校通知？",
+      "answer_en": "Visit http://iso.zjnu.edu.cn for all official international student notifications. You can also follow StudyAtZJNU on WeChat, Facebook, Instagram, YouTube, and Twitter for updates.",
+      "answer_zh": "请访问 http://iso.zjnu.edu.cn 查看国际学生官方通知。也可关注 StudyAtZJNU 微信公众号、Facebook、Instagram、YouTube 和 Twitter 获取最新消息。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.3 Internet Service / 网络服务",
+      "keywords": [
+        "find",
+        "announcements",
+        "university",
+        "online"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "ZJNU International Student Office Website / 国际学生办公室网站",
+          "url": "http://iso.zjnu.edu.cn"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q066",
+      "question_en": "How can I use the library?",
+      "question_zh": "如何使用图书馆？",
+      "answer_en": "Non-degree students may read in-house only; degree students can borrow books with their Smart Card. Borrowed books are kept for one month and can be renewed online or at the front desk. Late returns incur fines.",
+      "answer_zh": "非学位生可在馆内阅览，学位生可凭校园卡借阅。借阅期限为1个月，可在前台或网上续借，逾期将罚款。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.4 Library and Information Center / 图书信息中心使用",
+      "keywords": [
+        "library"
+      ],
+      "variations": [
+        "How to use the library?",
+        "What is the process to use the library?"
+      ],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "Library Website / 图书馆官网",
+          "url": "http://lib.zjnu.edu.cn"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q067",
+      "question_en": "What is my library account login info?",
+      "question_zh": "图书馆账户的登录信息是什么？",
+      "answer_en": "Username: student ID number; Initial password: last 4 digits of passport number. For help call 0579-82282503.",
+      "answer_zh": "用户名：学号；初始密码：护照号后4位。如需帮助请拨0579-82282503。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.4 Library and Information Center / 图书信息中心使用",
+      "keywords": [
+        "account",
+        "login",
+        "library",
+        "info"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q068",
+      "question_en": "Where can I get psychological counseling on campus?",
+      "question_zh": "校内哪里可以进行心理咨询？",
+      "answer_en": "Visit Room 312, Mental Health Education and Quality Development Center (3rd floor of Student Activity Center). Call 0579-82298933 or 698933 (China Mobile only). Appointments can also be made online via http://ehall.zjnu.edu.cn/new/indexzjnu.html by searching '心理咨询'.",
+      "answer_zh": "前往学生活动中心三楼312室心理健康教育与素质发展中心。电话0579-82298933或698933（仅限中国移动）。可登录 http://ehall.zjnu.edu.cn/new/indexzjnu.html 搜索“心理咨询”进行预约。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.5 Psychological Counseling / 心理咨询服务",
+      "keywords": [
+        "psychological",
+        "campus",
+        "counseling"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "link",
+          "title": "Online Counseling Portal / 在线心理咨询平台",
+          "url": "http://ehall.zjnu.edu.cn/new/indexzjnu.html"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q069",
+      "question_en": "Is online or telephone counseling available?",
+      "question_zh": "可以进行线上或电话咨询吗？",
+      "answer_en": "Yes. Email xlzx@zjnu.cn (Subject: Counseling, not instant reply) or call 0579-82298858 / 698858 (China Mobile only) between 18:30-21:30.",
+      "answer_zh": "可以。可发邮件至 xlzx@zjnu.cn （主题注明“Counseling”，非即时回复）或拨打 0579-82298858 / 698858 （仅限中国移动） 时间 18:30-21:30。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.5 Psychological Counseling / 心理咨询服务",
+      "keywords": [
+        "telephone",
+        "available",
+        "counseling",
+        "online"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q070",
+      "question_en": "What group counseling topics are offered?",
+      "question_zh": "团体心理辅导有哪些主题？",
+      "answer_en": "Themes include self-exploration, interpersonal communication, romantic relationships, time and emotion management, and career planning. Appointments via 82298933 / 698933.",
+      "answer_zh": "主题包括自我探索、人际沟通、恋爱关系、时间与情绪管理、职业规划等。可拨打 82298933 / 698933 预约。",
+      "category": "Guide to Campus Life / 校园生活指南",
+      "subcategory": "4.5 Psychological Counseling / 心理咨询服务",
+      "keywords": [
+        "counseling",
+        "offered",
+        "group",
+        "topics"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q071",
+      "question_en": "What types of scholarships are available at ZJNU?",
+      "question_zh": "浙师大有哪些国际学生奖学金？",
+      "answer_en": "Zhejiang Normal University offers several scholarships for international students: (1) Chinese Government Scholarship (Full) – covers tuition, accommodation, living allowance, and insurance (800 RMB/year). (2) International Chinese Teachers Scholarship (Full) – also covers tuition, accommodation, living allowance, and insurance. (3) Zhejiang Provincial Government Scholarship – application period is April to May each year; details are published by the International Student Office. (4) ZJNU Scholarship for Top International Students – application period is also April to May, with details released by the International Student Office.",
+      "answer_zh": "浙江师范大学为国际学生提供多种奖学金：(1) 中国政府奖学金（全额）：包括学费、住宿费、生活补贴及医疗保险（每年800元）。(2) 国际中文教师奖学金（全额）：包括学费、住宿费、生活费及医疗保险。(3) 浙江省政府奖学金：每年4月至5月申请，具体由国际学生办公室公布。(4) 浙师大优秀国际学生奖学金：每年4月至5月申请，具体由国际学生办公室发布。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.1 Types of Scholarships / 奖学金类型",
+      "keywords": [
+        "types",
+        "zjnu",
+        "scholarships",
+        "available"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q072",
+      "question_en": "How can I apply for a scholarship?",
+      "question_zh": "我如何申请奖学金？",
+      "answer_en": "Applications depend on the scholarship type. For Chinese Government Scholarships, apply through the CSC online system (http://studyinchina.csc.edu.cn). For university or provincial scholarships, apply through the ZJNU International Student Office during the announced period. You must prepare transcripts, recommendation letters, a study plan, and a valid passport copy.",
+      "answer_zh": "申请方式取决于奖学金类型。中国政府奖学金通过国家留学基金委网站 (http://studyinchina.csc.edu.cn) 申请。学校及省政府奖学金通过浙江师范大学国际学生办公室在规定时间内申请。申请材料包括成绩单、推荐信、学习计划及护照复印件等。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.1 Types of Scholarships / 奖学金类型",
+      "keywords": [
+        "apply",
+        "scholarship"
+      ],
+      "variations": [
+        "How to apply for a scholarship?",
+        "What is the process to apply for a scholarship?"
+      ],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Scholarship Application Form / 奖学金申请表",
+          "url": "attachments/forms/scholarship_application_form.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q073",
+      "question_en": "When should I apply for scholarships?",
+      "question_zh": "我什么时候可以申请奖学金？",
+      "answer_en": "Most scholarships accept applications between January and May each year. Exact deadlines vary depending on the scholarship type, so check announcements on the university website or the International Student Office.",
+      "answer_zh": "大多数奖学金申请时间为每年1月至5月，具体截止日期因奖学金类型而异，请关注学校官网或国际学生办公室发布的通知。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.1 Types of Scholarships / 奖学金类型",
+      "keywords": [
+        "apply",
+        "scholarships",
+        "should"
+      ],
+      "variations": [
+        "When do I need to I apply for scholarships?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q074",
+      "question_en": "Can I apply for more than one scholarship?",
+      "question_zh": "我可以同时申请多个奖学金吗？",
+      "answer_en": "Normally, a student can receive only one scholarship at a time. If you are selected for multiple scholarships, you must choose one according to university policy.",
+      "answer_zh": "通常情况下，学生同一时间只能获得一种奖学金。如同时被多个奖学金录取，需根据学校规定选择其一。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.1 Types of Scholarships / 奖学金类型",
+      "keywords": [
+        "apply",
+        "than",
+        "more",
+        "scholarship"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q075",
+      "question_en": "What are the accommodation rules for scholarship students?",
+      "question_zh": "奖学金生的住宿规定是什么？",
+      "answer_en": "Full scholarship PhD students live in single rooms (shared during pre-program Chinese courses). Full scholarship BA and MA students share double rooms. The last day of free accommodation is one week after the semester ends. Family members cannot stay on campus.",
+      "answer_zh": "全额奖学金博士生住单人间（预科中文学习期间为双人间），本科及硕士奖学金生住双人间。免费住宿截止日期为学期结束后一周。家庭成员不得入住校内宿舍。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "accommodation",
+        "rules",
+        "students",
+        "scholarship"
+      ],
+      "variations": [
+        "What is the accommodation rules for scholarship students?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q076",
+      "question_en": "What are the attendance requirements for scholarship students?",
+      "question_zh": "奖学金生的出勤要求是什么？",
+      "answer_en": "Scholarship students must confirm attendance between the 15th–20th of each month with their college counselor. Missing confirmation without notice will suspend or cancel the next month's allowance. Attendance is checked weekly via fingerprint scanning. Repeated absences may result in scholarship cancellation.",
+      "answer_zh": "奖学金生每月15日至20日必须向学院辅导员确认出勤。未提前请假或未按时确认出勤者，其下个月生活费将暂停或取消。学院每周通过指纹系统检查出勤，缺勤严重者将被取消奖学金资格。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "requirements",
+        "students",
+        "attendance",
+        "scholarship"
+      ],
+      "variations": [
+        "What is the attendance requirements for scholarship students?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q077",
+      "question_en": "Can scholarship students take internships or fieldwork?",
+      "question_zh": "奖学金生可以参加实习或科研实践吗？",
+      "answer_en": "Yes, but you must fill out the Internship (Research) Workbook and Safety Commitment Letter before starting. If the internship or research is outside China, your scholarship and living allowance will be paused during that period. If the internship is part of your academic program and approved, the allowance may be reclaimed later.",
+      "answer_zh": "可以，但必须在实习前填写《实习（科研）手册》和《安全承诺书》。如在境外实习或科研，奖学金及生活费将在此期间暂停。如该实习属于课程计划且经学院批准，返校后可补发生活费。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "take",
+        "scholarship",
+        "internships",
+        "students",
+        "fieldwork"
+      ],
+      "variations": ["take internships or fieldwork?"],
+      "attachments": [
+        {
+          "type": "placeholder",
+          "title": "Internship Safety Commitment Form / 实习安全承诺书",
+          "url": "attachments/forms/internship_commitment_form.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q078",
+      "question_en": "What is the annual scholarship appraisal?",
+      "question_zh": "什么是奖学金年度评审？",
+      "answer_en": "All scholarship students must undergo an annual appraisal in April to continue receiving the scholarship. The appraisal is based on academic performance, attendance, and participation in campus activities. Failing the appraisal may lead to suspension or cancellation of the scholarship.",
+      "answer_zh": "所有奖学金生每年四月都需进行年度评审，以决定奖学金是否继续发放。评审内容包括学习成绩、出勤情况和校园活动参与度。未通过者将被暂停或取消奖学金。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "annual",
+        "appraisal",
+        "scholarship"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q079",
+      "question_en": "When and how is the living allowance paid?",
+      "question_zh": "生活费何时发放？如何领取？",
+      "answer_en": "ZJNU deposits the living allowance between the 5th and 10th of each month. Students registering before the 15th receive a full month's allowance, while those registering after the 15th receive half. If you lose your bank card, cancel and replace it immediately, and submit a copy to your college counselor.",
+      "answer_zh": "学校每月5日至10日发放生活费。15日（含）前注册者可领取全额，15日后注册者仅发放半额。若银行卡遗失，应立即挂失并补办新卡，将复印件交学院辅导员。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "living",
+        "allowance",
+        "paid"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q080",
+      "question_en": "What happens if I violate university rules as a scholarship student?",
+      "question_zh": "如果奖学金生违反学校规定会怎样？",
+      "answer_en": "Violation of university rules, poor attendance, or misconduct can lead to reduction, suspension, or permanent cancellation of your scholarship. Repeated violations may also affect your student status.",
+      "answer_zh": "如违反学校规定、出勤不良或有不当行为，奖学金可能被减少、暂停或永久取消。多次违规还可能影响学籍。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "scholarship",
+        "violate",
+        "student",
+        "happens",
+        "rules",
+        "university"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q081",
+      "question_en": "Can my scholarship be restored after suspension?",
+      "question_zh": "奖学金被暂停后可以恢复吗？",
+      "answer_en": "In certain cases, yes. If your academic or behavioral performance improves, you can apply for scholarship restoration with approval from your college and the International Student Office.",
+      "answer_zh": "在某些情况下可以。如学习或行为表现明显改善，可向学院和国际学生办公室申请恢复奖学金。",
+      "category": "Scholarships for International Students / 国际学生奖学金指南",
+      "subcategory": "5.2 Management of Scholarship Students / 奖学金生管理",
+      "keywords": [
+        "suspension",
+        "after",
+        "restored",
+        "scholarship"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q082",
+      "question_en": "What does student status mean at ZJNU?",
+      "question_zh": "在浙师大学籍是什么意思？",
+      "answer_en": "Student status means you are officially registered at Zhejiang Normal University as a degree or non-degree student. It records your admission, registration, academic progress, and graduation eligibility.",
+      "answer_zh": "学籍表示你正式注册为浙江师范大学的学位生或非学位生，用于记录入学、注册、学习进度和毕业资格。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "status",
+        "zjnu",
+        "mean",
+        "student"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q083",
+      "question_en": "What documents are required for registration?",
+      "question_zh": "注册时需要哪些文件？",
+      "answer_en": "You must bring your passport, Letter of Admission, JW201/JW202 form, highest diploma and transcript (originals), Registration Form of Temporary Residence, 4 passport photos, and your housing lease if living off-campus. Tuition and insurance must be paid before registration.",
+      "answer_zh": "注册时需提供护照、录取通知书、JW201或JW202表、最高学历证书及成绩单原件、外国人临时住宿登记表、4张证件照及租房合同（如校外住宿）。注册前须缴清学费和保险费。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "required",
+        "registration",
+        "documents"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q084",
+      "question_en": "When can my student status be canceled?",
+      "question_zh": "在什么情况下会被取消学籍？",
+      "answer_en": "Your student status may be canceled if you fail to register or pay tuition on time, have poor attendance, violate school rules, or are absent for more than two weeks without permission. It can also be canceled for misconduct or legal violations.",
+      "answer_zh": "若未按时注册、缴费、上课或严重违反学校规定，将可能被取消学籍。无故连续两周缺勤、违纪或违法行为也会导致学籍被取消。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "canceled",
+        "status",
+        "student"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q085",
+      "question_en": "Can I suspend my studies temporarily?",
+      "question_zh": "我可以暂时休学吗？",
+      "answer_en": "Yes. You may apply for suspension if you have serious illness, personal emergencies, pregnancy, or other justified reasons. The total suspension time cannot exceed two years. During suspension, your student status is paused and you must leave China.",
+      "answer_zh": "可以。若因严重疾病、个人紧急情况、怀孕等正当理由，可申请休学。休学累计时间不得超过两年。休学期间学籍暂停，须离境回国。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "suspend",
+        "studies",
+        "temporarily"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q086",
+      "question_en": "How can I reinstate my student status after suspension?",
+      "question_zh": "休学后如何恢复学籍？",
+      "answer_en": "You must apply before the new semester begins, submit valid proof such as medical documents, and obtain approval from your college and the International Student Office. Scholarship students must also get consent from their sponsor.",
+      "answer_zh": "需在新学期开始前提出复学申请，提交有效证明（如病愈证明），并经学院和国际学生办公室批准。奖学金生还需获得资助方同意。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "reinstate",
+        "suspension",
+        "student",
+        "status",
+        "after"
+      ],
+      "variations": [
+        "How to reinstate my student status after suspension?",
+        "What is the process to reinstate my student status after suspension?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q087",
+      "question_en": "Can I transfer to another major or university?",
+      "question_zh": "我可以转专业或转学吗？",
+      "answer_en": "Yes, but only once during your study. Transfers require consent from your current and intended colleges, and final approval by the Academic Affairs Office and International Office. Scholarship students must also get embassy or CSC approval.",
+      "answer_zh": "可以，但在学期间仅限一次。需经原学院和拟转入学院同意，并经教务处和国际处批准。奖学金生还需获得大使馆或留学基金委批准。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "transfer",
+        "university",
+        "another",
+        "major"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q088",
+      "question_en": "What happens if I violate university discipline or Chinese law?",
+      "question_zh": "如果违反校纪或中国法律会怎样？",
+      "answer_en": "You may face disciplinary action such as warnings, suspension, or expulsion. Severe cases—like criminal activity—lead to immediate cancellation of your student status, loss of scholarship, and visa termination.",
+      "answer_zh": "可能受到警告、停学或开除等处分。若涉及违法犯罪，将立即被取消学籍、终止奖学金并注销签证。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.1 Student Status Management / 学籍管理",
+      "keywords": [
+        "chinese",
+        "violate",
+        "discipline",
+        "happens",
+        "university"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q089",
+      "question_en": "How long does it take to complete my program at ZJNU?",
+      "question_zh": "在浙师大学习需要多长时间？",
+      "answer_en": "Undergraduate programs usually last four years (some majors take five). Master’s programs last two to three years, and doctoral programs last about three years. You may apply for an extension if needed, but it cannot exceed two years.",
+      "answer_zh": "本科专业一般为四年（部分专业为五年），硕士学制为两至三年，博士学制约三年。如确有需要可申请延期，但最长不超过两年。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "complete",
+        "take",
+        "long",
+        "program",
+        "zjnu"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q090",
+      "question_en": "How are courses and credits arranged?",
+      "question_zh": "课程和学分如何安排？",
+      "answer_en": "Each college issues a curriculum plan listing compulsory and elective courses. You must complete the required credits to graduate. Some achievements, like published papers or projects, may count as credits after approval.",
+      "answer_zh": "各学院会发布培养计划，列出必修和选修课程。学生需修满规定学分才能毕业。经批准的论文发表或科研项目等成果可折算为学分。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "courses",
+        "credits",
+        "arranged"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q091",
+      "question_en": "When and how do I select or drop courses?",
+      "question_zh": "我什么时候、如何选课或退课？",
+      "answer_en": "Course selection is done online at the start of each semester. You can adjust or drop a course within the first two weeks. After that, your registration is final and you must attend and take exams for all selected courses.",
+      "answer_zh": "每学期开学初可在网上选课。可在前两周内调整或退课，之后选课结果将最终确定，所选课程必须按时上课并参加考试。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "courses",
+        "select",
+        "drop"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q092",
+      "question_en": "What happens if I miss too many classes?",
+      "question_zh": "如果我缺课太多会怎样？",
+      "answer_en": "If you are absent for more than one-third of total classes or have three unexcused absences, you will lose the right to take the final exam and receive a failing grade for the course.",
+      "answer_zh": "若缺课超过总课时三分之一或无故缺课三次以上，将失去参加期末考试的资格，并被记为不及格。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "happens",
+        "many",
+        "classes",
+        "miss"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q093",
+      "question_en": "What grading system does ZJNU use?",
+      "question_zh": "浙师大采用什么评分制度？",
+      "answer_en": "Most courses use a 100-point grading scale. Some use a five-level system or Pass/Fail. All results are recorded in your transcript, and only the highest grade is kept if you repeat a course.",
+      "answer_zh": "多数课程采用百分制评分，也有五级制或合格/不合格制。所有成绩都会记录在成绩单中，重修课程只保留最高成绩。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "grading",
+        "system",
+        "zjnu"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q094",
+      "question_en": "Can I retake or make up a failed course?",
+      "question_zh": "课程不及格可以补考或重修吗？",
+      "answer_en": "Yes. You can take a make-up exam or retake the course in a later semester. If you fail a compulsory course twice, you must repeat it until you pass to earn the required credit.",
+      "answer_zh": "可以。不及格课程可参加补考或下学期重修。若必修课两次不及格，必须再次重修直至通过才能获得相应学分。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "retake",
+        "make",
+        "course",
+        "failed"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q095",
+      "question_en": "Are there compulsory courses for international students?",
+      "question_zh": "国际学生有必修课程吗？",
+      "answer_en": "Yes. International degree students must take Chinese Language and Overview of China. Students in philosophy or political science majors must also take Political Theory.",
+      "answer_zh": "有的。国际学位生必须学习汉语和中国概况课程。哲学或政治学专业的学生还需修读政治理论课程。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "international",
+        "courses",
+        "there",
+        "compulsory",
+        "students"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q096",
+      "question_en": "What language are classes taught in?",
+      "question_zh": "课程用什么语言授课？",
+      "answer_en": "Most programs are taught in Chinese, but some are in English. Students in English-taught programs must write their thesis in English (with a Chinese abstract), while Chinese-taught students must defend in Chinese.",
+      "answer_zh": "多数课程以中文授课，部分项目为英文授课。英文授课学生须用英文撰写论文（附中文摘要），中文授课学生须用中文答辩。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "classes",
+        "language",
+        "taught"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q097",
+      "question_en": "What are the rules for exams and cheating?",
+      "question_zh": "考试有什么规定？作弊会怎样？",
+      "answer_en": "Students must take all scheduled exams. Cheating results in a score of zero for the course and disciplinary action according to university rules.",
+      "answer_zh": "学生必须参加所有安排的考试。如有作弊行为，该课程记零分，并按学校规定处分。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.2 Academic Progress & Course Regulations / 学业与课程规定",
+      "keywords": [
+        "cheating",
+        "rules",
+        "exams"
+      ],
+      "variations": [
+        "What is the rules for exams and cheating?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q098",
+      "question_en": "Do I have to attend all my classes?",
+      "question_zh": "我必须参加所有课程吗？",
+      "answer_en": "Yes. All international students must attend every class, lab, and academic activity arranged by the university. Poor attendance can lead to warnings or even expulsion.",
+      "answer_zh": "是的。国际学生必须参加学校安排的所有课程、实验和教学活动。出勤率低可能会导致警告甚至被开除。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "classes",
+        "attend",
+        "have"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q099",
+      "question_en": "What happens if I am late or leave class early?",
+      "question_zh": "上课迟到或早退会怎样？",
+      "answer_en": "Being late or leaving early is considered poor discipline. Frequent lateness or early departure will affect your attendance record and may result in disciplinary action.",
+      "answer_zh": "迟到或早退属于课堂纪律不良行为，若多次发生将影响出勤记录，并可能受到纪律处分。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "early",
+        "late",
+        "leave",
+        "class",
+        "happens"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q100",
+      "question_en": "How do I ask for a leave from class?",
+      "question_zh": "我该如何请假？",
+      "answer_en": "Submit a written Request for Leave form stating your reason and duration. Medical proof is required for sick leave. Compassionate leave requires valid personal reasons and college approval.",
+      "answer_zh": "需填写《请假申请表》，说明请假原因和时长。病假需提供医疗证明，事假需有正当理由并经学院批准。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "leave",
+        "from",
+        "class"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q101",
+      "question_en": "What if I cannot return on time from leave?",
+      "question_zh": "如果我请假后不能按时返校怎么办？",
+      "answer_en": "You must apply for an extension before your leave ends. Failing to report your return on time will be treated as overstay or unexcused absence.",
+      "answer_zh": "须在假期结束前申请延期。若未按时返校且未报备，将视为逾期或旷课处理。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "leave",
+        "return",
+        "time",
+        "cannot",
+        "from"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q102",
+      "question_en": "Who approves my leave request?",
+      "question_zh": "谁来批准我的请假？",
+      "answer_en": "Undergraduates submit leave requests to their college. For leaves over 7 days, approval must also be registered with the Department for International Exchange and Cooperation. Graduate students need approval from their supervisor and college, depending on leave duration.",
+      "answer_zh": "本科生的请假由所在学院批准，超过7天的假期需报国际交流与合作处备案。研究生请假需导师和学院根据假期长短分别审批。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "approves",
+        "leave",
+        "request"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q103",
+      "question_en": "What counts as an unexcused absence?",
+      "question_zh": "什么情况算作旷课？",
+      "answer_en": "Missing class without applying for leave, without receiving approval, or failing to extend an approved leave is considered an unexcused absence.",
+      "answer_zh": "未请假、未获批准或未及时续假而缺课的情况均视为旷课。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "unexcused",
+        "absence",
+        "counts"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q104",
+      "question_en": "What are the consequences of repeated absences?",
+      "question_zh": "多次旷课会有什么后果？",
+      "answer_en": "Unexcused absences may result in warnings, deduction of scholarships, or even cancellation of student status if they account for more than one-third of total class hours in a semester.",
+      "answer_zh": "多次旷课会被警告、取消奖学金，若旷课累计超过学期总课时三分之一，将被取消学籍。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "absences",
+        "repeated",
+        "consequences"
+      ],
+      "variations": [
+        "What is the consequences of repeated absences?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q105",
+      "question_en": "Can scholarship students lose their scholarships for attendance issues?",
+      "question_zh": "奖学金生因出勤问题会被取消奖学金吗？",
+      "answer_en": "Yes. Scholarship students who violate attendance or disciplinary rules may have their scholarship suspended or permanently revoked.",
+      "answer_zh": "会的。奖学金生若违反出勤或纪律规定，奖学金可能被暂停或永久取消。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "scholarships",
+        "attendance",
+        "scholarship",
+        "lose",
+        "issues",
+        "students",
+        "their"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q106",
+      "question_en": "How is attendance monitored?",
+      "question_zh": "学校如何统计考勤？",
+      "answer_en": "Course teachers take attendance and report results to the college’s international student affairs office each month. Attendance records are also used for scholarship and academic evaluations.",
+      "answer_zh": "授课教师负责点名并将结果上报学院国际学生事务办公室，考勤记录同时用于奖学金和学业评估。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "attendance",
+        "monitored"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q107",
+      "question_en": "What kind of disciplinary actions exist at ZJNU?",
+      "question_zh": "浙师大有哪些纪律处分？",
+      "answer_en": "Depending on the severity, actions include warnings, serious warnings, probation, suspension, or expulsion. Expelled students lose their student status and must leave China.",
+      "answer_zh": "根据情节轻重，处分包括警告、严重警告、留校察看、停学或开除。被开除者学籍将被取消并须离境。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.3 Attendance, Discipline & Leave Regulations / 出勤与纪律规定",
+      "keywords": [
+        "disciplinary",
+        "actions",
+        "exist",
+        "kind",
+        "zjnu"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q108",
+      "question_en": "Can I transfer to another major at ZJNU?",
+      "question_zh": "我可以在浙师大转专业吗？",
+      "answer_en": "Yes, undergraduate and graduate students may apply to transfer once during their studies. You must obtain approval from your current and intended colleges, and final approval from the Academic Affairs Office and the International Student Office. Transfers are only allowed in the early semesters and require valid reasons.",
+      "answer_zh": "可以，本科生和研究生在学习期间可申请一次转专业。需经原学院和拟转入学院同意，并经教务处和国际处批准。转专业必须在学期初提出，并有正当理由。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "transfer",
+        "zjnu",
+        "another",
+        "major"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q109",
+      "question_en": "Can I transfer to another university?",
+      "question_zh": "我可以转到其他大学吗？",
+      "answer_en": "Yes, but you must provide a written application, approvals from your current college and the International Student Office, and consent from the intended university. Scholarship students must also obtain written permission from their embassy or the China Scholarship Council (CSC).",
+      "answer_zh": "可以，但需提交书面申请，获得所在学院和国际处批准，并取得拟转入学校的同意。奖学金生还需获得所在国使馆或中国国家留学基金委的书面批准。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "transfer",
+        "university",
+        "another"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q110",
+      "question_en": "Under what conditions can I not transfer?",
+      "question_zh": "在哪些情况下不能转专业或转学？",
+      "answer_en": "Transfers are not allowed if you have been disciplined, already transferred once, your student status is suspended, or you cannot provide a justified reason. You also cannot transfer if you have been enrolled for less than one semester or are pending expulsion.",
+      "answer_zh": "若曾受处分、已转过专业、学籍处于休学状态或无正当理由，则不得转专业或转学。此外，入学未满一学期或面临退学处分的学生也不得转学。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "conditions",
+        "transfer",
+        "under"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q111",
+      "question_en": "When can I apply for a suspension of studies?",
+      "question_zh": "什么时候可以申请休学？",
+      "answer_en": "You can apply if you face serious illness, family emergencies, pregnancy, or other special circumstances approved by the university. Each suspension usually lasts one semester, and the total suspension period cannot exceed two years.",
+      "answer_zh": "若因重大疾病、家庭紧急情况、怀孕等特殊原因，可申请休学。每次休学一般为一学期，累计时间不得超过两年。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "apply",
+        "suspension",
+        "studies"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q112",
+      "question_en": "How do I apply for a suspension?",
+      "question_zh": "如何申请休学？",
+      "answer_en": "Submit a written suspension application with valid proof (such as a medical certificate) to your college. After your college approves it, the application will be sent to the Academic Affairs Office (or Graduate School) and the International Student Office for final approval.",
+      "answer_zh": "需提交书面休学申请及有效证明（如病假条）至所在学院。学院批准后，上报教务处（或研究生院）和国际处审批。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "apply",
+        "suspension"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q113",
+      "question_en": "What happens after my suspension is approved?",
+      "question_zh": "休学批准后会怎样？",
+      "answer_en": "You must complete visa cancellation and leave China within 15 days. ZJNU is not responsible for your safety during suspension. Credits earned during suspension are invalid, and tuition for the current semester will not be refunded.",
+      "answer_zh": "休学获批后需在15日内办理签证注销并离境。休学期间学校不承担安全责任。休学期间所得学分无效，本学期学费不退还。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "happens",
+        "after",
+        "approved",
+        "suspension"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q114",
+      "question_en": "Do scholarship students keep their funding during suspension?",
+      "question_zh": "奖学金生休学期间还能领取资助吗？",
+      "answer_en": "No. Scholarship allowances are paused during suspension. Chinese Government Scholarship students may keep their status if their suspension is due to illness and approved by the CSC, but other scholarships stop immediately.",
+      "answer_zh": "不能。休学期间奖学金发放暂停。若因病休学并获国家留学基金委批准，国家奖学金身份可保留；其他奖学金将自动中止。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "during",
+        "scholarship",
+        "keep",
+        "suspension",
+        "funding",
+        "students",
+        "their"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q115",
+      "question_en": "How do I resume my studies after suspension?",
+      "question_zh": "休学后如何复学？",
+      "answer_en": "Before the new semester, submit a resumption application with necessary certificates. If your suspension was for illness, you must provide medical proof of recovery. Approval is required from your college and the International Student Office.",
+      "answer_zh": "需在新学期开始前提交复学申请及相关证明。若因病休学，需提供康复医疗证明。学院和国际处批准后方可复学。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "suspension",
+        "after",
+        "studies",
+        "resume"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q116",
+      "question_en": "Can I change universities while suspended?",
+      "question_zh": "休学期间可以转到其他大学吗？",
+      "answer_en": "No. Students on suspension are not considered active ZJNU students and must first cancel their student status before transferring elsewhere.",
+      "answer_zh": "不可以。休学期间不具备浙师大学籍，如欲转学，须先办理退学手续。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "universities",
+        "change",
+        "while",
+        "suspended"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q117",
+      "question_en": "Will my tuition remain valid after I return from suspension?",
+      "question_zh": "休学后返回学校学费是否仍然有效？",
+      "answer_en": "Yes. If you paid tuition before suspension, the payment for the following semester remains valid when you resume your studies.",
+      "answer_zh": "是的。休学前已缴纳的下一学期学费在复学后仍然有效。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Transfers, Suspension, and Resumption / 转专业、休学与复学规定",
+      "keywords": [
+        "remain",
+        "suspension",
+        "valid",
+        "return",
+        "tuition",
+        "after",
+        "will",
+        "from"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q118",
+      "question_en": "When can a student receive an academic warning?",
+      "question_zh": "什么时候会收到学业警告？",
+      "answer_en": "If you fail to earn at least half of the required credits in one semester, your college will issue a written academic warning. Two consecutive warnings or three in total may lead to student status cancellation.",
+      "answer_zh": "若在一个学期内未修满规定学分的一半，学院会发出学业警告。连续两次或累计三次收到警告，将可能被取消学籍。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "warning",
+        "academic",
+        "receive",
+        "student"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q119",
+      "question_en": "Under what conditions can my student status be canceled?",
+      "question_zh": "在什么情况下会被取消学籍？",
+      "answer_en": "Your student status may be canceled if you withdraw voluntarily, fail to resume study after suspension, exceed the allowed study period, do not pay tuition, have excessive absences, violate laws or regulations, or receive disciplinary expulsion.",
+      "answer_zh": "若主动退学、休学期满未复学、超过最大学习年限、未缴学费、长期旷课、违反法律法规或被处分退学，均会被取消学籍。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "conditions",
+        "student",
+        "status",
+        "under",
+        "canceled"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q120",
+      "question_en": "What happens after my student status is canceled?",
+      "question_zh": "学籍被取消后会怎样？",
+      "answer_en": "You will lose all rights as a ZJNU student and must leave the university. You must complete visa cancellation procedures and leave China within the prescribed time. ZJNU will report the cancellation to immigration authorities.",
+      "answer_zh": "学籍取消后将失去学生资格，必须离校并在规定时间内办理签证注销手续离境。学校会将学籍取消情况上报出入境管理部门。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "student",
+        "status",
+        "happens",
+        "after",
+        "canceled"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q121",
+      "question_en": "Can I withdraw from ZJNU voluntarily?",
+      "question_zh": "我可以主动申请退学吗？",
+      "answer_en": "Yes. You can submit a written withdrawal application to your college. After approval by your college, it will be reviewed by the Academic Affairs Office and the International Student Office.",
+      "answer_zh": "可以。需向所在学院提交书面退学申请，经学院同意后上报教务处和国际处审批。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "zjnu",
+        "voluntarily",
+        "from",
+        "withdraw"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q122",
+      "question_en": "Can a canceled student apply for reinstatement?",
+      "question_zh": "学籍被取消后可以复学吗？",
+      "answer_en": "Generally no. Students expelled for disciplinary reasons or legal violations cannot be reinstated. Those canceled for health issues may reapply only after full recovery and university approval.",
+      "answer_zh": "一般不可以。因纪律处分或违法被退学者不得复学。因健康原因退学者如完全康复，可重新申请入学，经学校批准后方可复学。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "student",
+        "reinstatement",
+        "apply",
+        "canceled"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q123",
+      "question_en": "What should I do after receiving a cancellation notice?",
+      "question_zh": "收到退学通知后我该怎么办？",
+      "answer_en": "You must complete withdrawal and visa procedures within one week. If you refuse to sign the notice, it will still take effect. Those with serious illnesses or disabilities must return home under guardian escort.",
+      "answer_zh": "应在一周内完成退学及签证注销手续。若拒绝签字，通知仍然有效。患严重疾病或残疾者应由监护人陪同回国。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "notice",
+        "receiving",
+        "cancellation",
+        "should",
+        "after"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q124",
+      "question_en": "Will my tuition be refunded if I am expelled?",
+      "question_zh": "被开除后学费会退吗？",
+      "answer_en": "No. Students expelled due to violation of Chinese law or university rules are not eligible for any tuition refund.",
+      "answer_zh": "不会。因违反中国法律或校规被退学者，已缴学费不予退还。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "will",
+        "tuition",
+        "expelled",
+        "refunded"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q125",
+      "question_en": "What happens to my scholarship if my student status is canceled?",
+      "question_zh": "学籍被取消后奖学金怎么办？",
+      "answer_en": "Your scholarship will be terminated immediately. You will be reported to the scholarship authority (such as CSC) and must pay your travel expenses to return home.",
+      "answer_zh": "奖学金将立即终止。学校会将情况上报奖学金主管部门（如国家留学基金委），回国旅费需自理。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "scholarship",
+        "student",
+        "status",
+        "happens",
+        "canceled"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q126",
+      "question_en": "Can I appeal a student status cancellation decision?",
+      "question_zh": "学籍被取消可以申诉吗？",
+      "answer_en": "Yes. You can file a written appeal according to the ZJNU Student Appeal Regulations. Appeals must be submitted within the specified time after receiving the notice.",
+      "answer_zh": "可以。可根据《浙江师范大学学生申诉规定》提交书面申诉，须在收到通知后的规定时间内提出。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "cancellation",
+        "student",
+        "status",
+        "appeal",
+        "decision"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q127",
+      "question_en": "What documents can I get if I withdraw or am expelled?",
+      "question_zh": "退学或被开除后可以获得哪些证明？",
+      "answer_en": "Depending on your study duration and performance, you may receive a Certificate of Program Completion, Certificate of Credits, or Proof of Schooling. Expelled students receive only proof of attendance, not graduation.",
+      "answer_zh": "根据学习时间和表现，可获得结业证书、学分证明或在读证明。被开除者仅能获得在读证明，不能获得毕业证书。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.5 Student Status Cancellation & Withdrawal / 学籍取消与退学规定",
+      "keywords": [
+        "documents",
+        "expelled",
+        "withdraw"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q128",
+      "question_en": "What are the requirements for graduation at ZJNU?",
+      "question_zh": "在浙师大学生毕业需要满足哪些条件？",
+      "answer_en": "To graduate, students must complete all required courses and credits, finish their thesis or design project, and meet all disciplinary and moral standards. Once approved, graduates receive both a diploma and, if eligible, a degree certificate.",
+      "answer_zh": "学生需完成所有规定课程与学分，完成论文或设计项目，并符合品行与纪律要求。通过审核后，将获得毕业证书及（符合条件者）学位证书。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "requirements",
+        "graduation",
+        "zjnu"
+      ],
+      "variations": [
+        "What is the requirements for graduation at ZJNU?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q129",
+      "question_en": "Can I graduate earlier than the scheduled time?",
+      "question_zh": "我可以提前毕业吗？",
+      "answer_en": "Yes. If you complete all academic requirements early, you can apply for early graduation one semester in advance. Your college and the International Student Office must approve it.",
+      "answer_zh": "可以。如提前修完全部课程与学分，可在毕业前一学期申请提前毕业，需经学院与国际处批准。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "graduate",
+        "time",
+        "earlier",
+        "than",
+        "scheduled"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q130",
+      "question_en": "What if I cannot meet graduation requirements on time?",
+      "question_zh": "如果不能按时毕业怎么办？",
+      "answer_en": "You can apply for a graduation deferment at least one month before your program ends. With approval, you will pay tuition for the extended period. If not approved, you may receive a Certificate of Credits instead of a diploma.",
+      "answer_zh": "需在课程结束前一个月申请延期毕业，经批准后缴纳延期期间学费。若未获批准，将颁发学分证明而非毕业证书。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "graduation",
+        "requirements",
+        "time",
+        "cannot",
+        "meet"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q131",
+      "question_en": "What types of certificates can international students receive?",
+      "question_zh": "国际学生可以获得哪些类型的证书？",
+      "answer_en": "Depending on performance, students may receive one of the following: Graduation Certificate, Program-Completion Certificate, Course-Completion Certificate, Credit Certificate, or Proof of Schooling.",
+      "answer_zh": "根据学习表现，可获得以下证书之一：毕业证书、结业证书、修业证书、学分证明或在读证明。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "certificates",
+        "types",
+        "international",
+        "students",
+        "receive"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q132",
+      "question_en": "What is the difference between a Graduation Certificate and a Program-Completion Certificate?",
+      "question_zh": "毕业证书和结业证书有什么区别？",
+      "answer_en": "A Graduation Certificate is for students who meet all program requirements. A Program-Completion Certificate is given to students who have finished most courses but lack a few credits or have not passed the final thesis defense.",
+      "answer_zh": "毕业证书颁发给已完成所有课程要求的学生；结业证书颁发给大部分课程完成但仍欠学分或未通过论文答辩的学生。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "difference",
+        "graduation",
+        "certificate",
+        "completion",
+        "between",
+        "program"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q133",
+      "question_en": "Can I upgrade a Program-Completion Certificate to a Graduation Certificate later?",
+      "question_zh": "结业证书可以以后换成毕业证书吗？",
+      "answer_en": "Yes. If you earn the missing credits or pass the thesis defense within one year after leaving, you can apply to exchange your Program-Completion Certificate for a Graduation Certificate.",
+      "answer_zh": "可以。如在离校一年内补齐学分或通过论文答辩，可申请将结业证书换为毕业证书。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "graduation",
+        "certificate",
+        "later",
+        "completion",
+        "program",
+        "upgrade"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q134",
+      "question_en": "What happens if I have not finished enough credits for graduation?",
+      "question_zh": "如果学分不够毕业会怎样？",
+      "answer_en": "If you lack eight or more credits, you will receive a Certificate of Credits or Proof of Schooling, depending on how long you have studied at ZJNU.",
+      "answer_zh": "若欠学分八分或以上，将根据学习时间获得学分证明或在读证明。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "graduation",
+        "finished",
+        "credits",
+        "have",
+        "enough",
+        "happens"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q135",
+      "question_en": "Can I extend my study period as a scholarship student?",
+      "question_zh": "奖学金生可以延长学习时间吗？",
+      "answer_en": "Yes, but only with official approval. You must apply before the new academic year through your embassy or the recommending institution. If rejected, you must cover all expenses during the extended period.",
+      "answer_zh": "可以，但需正式批准。需在新学年开始前通过所在国使馆或推荐机构申请。若申请未获批准，延长期间费用自理。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "scholarship",
+        "period",
+        "student",
+        "study",
+        "extend"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q136",
+      "question_en": "What if I am caught cheating or plagiarizing?",
+      "question_zh": "如果考试作弊或抄袭会怎样？",
+      "answer_en": "Any certificate obtained through academic misconduct will be revoked. If registered with education authorities, ZJNU will request official cancellation of the certificate.",
+      "answer_zh": "若存在考试作弊或论文抄袭，相关证书将被撤销。如已上报教育部门，学校会申请正式注销该证书。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "caught",
+        "cheating",
+        "plagiarizing"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q137",
+      "question_en": "Can lost graduation certificates be reissued?",
+      "question_zh": "毕业证书丢失后可以补办吗？",
+      "answer_en": "No. Lost or damaged certificates cannot be reissued. However, the university can issue an official declaration proving your graduation, which holds the same legal validity.",
+      "answer_zh": "不可以。毕业证丢失或损坏无法补发，但学校可开具具有同等效力的毕业证明声明。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "certificates",
+        "graduation",
+        "reissued",
+        "lost"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q138",
+      "question_en": "Who issues graduation certificates and degrees?",
+      "question_zh": "谁负责颁发毕业证和学位证？",
+      "answer_en": "The Undergraduate Teaching Department or Graduate School handles production and issuance. Students must complete the clearance process and receive a Disengagement Slip to collect certificates from their college.",
+      "answer_zh": "教务处或研究生院负责制作与颁发。学生需完成离校手续并凭离校单到所在学院领取证书。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "certificates",
+        "issues",
+        "graduation",
+        "degrees"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q139",
+      "question_en": "How are student records managed after graduation?",
+      "question_zh": "毕业后学籍档案如何处理？",
+      "answer_en": "International student records and archives are handled in the same way as domestic students. Information about new graduates is reported to the Ministry of Education and Zhejiang Provincial Department of Education.",
+      "answer_zh": "国际学生的学籍档案与中国学生相同，毕业生信息会报送教育部和浙江省教育厅备案。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "graduation",
+        "records",
+        "managed",
+        "student",
+        "after"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q140",
+      "question_en": "When did these regulations take effect?",
+      "question_zh": "这些规定从什么时候开始实施？",
+      "answer_en": "The current version of the regulations took effect on September 1, 2017, replacing any earlier inconsistent documents. The Department for International Exchange and Cooperation is responsible for interpretation.",
+      "answer_zh": "本规定自2017年9月1日起实施，取代此前不一致文件，由国际交流与合作处负责解释。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.6 Graduation, Certificates & Degrees / 毕业、结业与学位授予规定",
+      "keywords": [
+        "effect",
+        "take",
+        "these",
+        "regulations"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q141",
+      "question_en": "What is the purpose of the Comprehensive Quality Assessment?",
+      "question_zh": "综合素质考核的目的是什么？",
+      "answer_en": "It aims to promote moral, academic, scientific, artistic, and social development among international students, encouraging overall excellence in conduct, study, and participation.",
+      "answer_zh": "旨在促进国际学生在德、智、体、美、劳等方面全面发展，鼓励其在品德、学业、科研、艺术和社会实践等方面取得优异成绩。",
+      "category": "Student Status & Degree Regulations / 学籍与学位规定",
+      "subcategory": "6.4 Comprehensive Quality Assessment / 综合素质评价",
+      "keywords": [
+        "quality",
+        "comprehensive",
+        "assessment",
+        "purpose"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q142",
+      "question_en": "What are the basic disciplinary rules for international students?",
+      "question_zh": "国际学生的基本纪律要求是什么？",
+      "answer_en": "International students must respect Chinese laws and university regulations. You should maintain good behavior, attend classes on time, and avoid any activities that harm university order or reputation.",
+      "answer_zh": "国际学生应遵守中国法律和学校规定，保持良好行为，按时上课，不得从事损害学校秩序或声誉的活动。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "disciplinary",
+        "international",
+        "basic",
+        "rules",
+        "students"
+      ],
+      "variations": [
+        "What is the basic disciplinary rules for international students?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q143",
+      "question_en": "What kinds of actions can lead to disciplinary punishment?",
+      "question_zh": "哪些行为会受到纪律处分？",
+      "answer_en": "Cheating, plagiarism, fighting, theft, destruction of property, alcohol abuse, harassment, gambling, dormitory violations, internet misuse, drug use, or other misconduct can lead to warnings, probation, or expulsion depending on severity.",
+      "answer_zh": "作弊、抄袭、打架、盗窃、破坏财物、酗酒、骚扰、赌博、宿舍违规、网络违规、吸毒等不当行为将根据严重程度受到警告、留校察看或开除处分。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "lead",
+        "kinds",
+        "disciplinary",
+        "actions",
+        "punishment"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q144",
+      "question_en": "What are the types of disciplinary penalties?",
+      "question_zh": "处分类型有哪些？",
+      "answer_en": "There are five types of disciplinary actions: (1) Admonishment, (2) Harsh Admonishment, (3) Mark of Demerit, (4) Probation, and (5) Expulsion.",
+      "answer_zh": "处分分为五种：（1）警告；（2）严重警告；（3）记过；（4）留校察看；（5）开除学籍。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "penalties",
+        "types",
+        "disciplinary"
+      ],
+      "variations": [
+        "What is the types of disciplinary penalties?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q145",
+      "question_en": "What is the process of disciplinary handling?",
+      "question_zh": "纪律处分的处理流程是怎样的？",
+      "answer_en": "When a violation occurs, the college investigates and reports to the International Student Office. The disciplinary committee decides the penalty, issues an official notice, and allows the student to defend or appeal before final approval.",
+      "answer_zh": "发生违纪行为后，由学院调查并上报国际学生办公室。纪律委员会讨论决定处分，并在正式批准前给予学生陈述和申诉的机会。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "handling",
+        "process",
+        "disciplinary"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q146",
+      "question_en": "Can I appeal a disciplinary decision?",
+      "question_zh": "我可以对处分提出申诉吗？",
+      "answer_en": "Yes. A written appeal must be submitted to the University’s Student Appeal Committee within 10 days after receiving the decision. The committee reviews and replies within 15–30 days.",
+      "answer_zh": "可以。在收到处分决定后10日内可向学校学生申诉委员会提交书面申诉，委员会将在15至30日内复审并反馈结果。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "decision",
+        "disciplinary",
+        "appeal"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q147",
+      "question_en": "Can disciplinary records affect my scholarship or graduation?",
+      "question_zh": "处分记录会影响我的奖学金或毕业吗？",
+      "answer_en": "Yes. Students with active disciplinary records cannot receive scholarships or degree certificates until the record is cleared.",
+      "answer_zh": "会。处分记录未解除前，学生不能获得奖学金或申请学位证书。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "graduation",
+        "scholarship",
+        "records",
+        "affect",
+        "disciplinary"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q148",
+      "question_en": "When did these regulations take effect?",
+      "question_zh": "本条例自何时起施行？",
+      "answer_en": "The regulations took effect on June 12, 2020, and are interpreted by the International Office of ZJNU.",
+      "answer_zh": "本条例自2020年6月12日起施行，由浙江师范大学国际处负责解释。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.1 Disciplinary Actions / 纪律处分规定",
+      "keywords": [
+        "effect",
+        "take",
+        "these",
+        "regulations"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q149",
+      "question_en": "What is the attendance policy at ZJNU?",
+      "question_zh": "浙师大的出勤政策是什么？",
+      "answer_en": "Attendance is compulsory. Students must attend at least 80% of classes for each course. Absences without permission affect grades and may lead to disciplinary actions.",
+      "answer_zh": "出勤是强制要求的。每门课程的出勤率不得低于80%。未经批准缺勤将影响成绩，并可能受到纪律处分。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.2 Attendance and Class Performance / 出勤与课堂表现",
+      "keywords": [
+        "zjnu",
+        "policy",
+        "attendance"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q150",
+      "question_en": "How can I request leave from class?",
+      "question_zh": "我如何请假不上课？",
+      "answer_en": "Submit a leave request to your instructor or advisor before class. Sick leave must be supported by a hospital medical certificate.",
+      "answer_zh": "需提前向任课老师或班主任请假。病假需提供医院证明。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.2 Attendance and Class Performance / 出勤与课堂表现",
+      "keywords": [
+        "leave",
+        "from",
+        "class",
+        "request"
+      ],
+      "variations": [
+        "How to request leave from class?",
+        "What is the process to request leave from class?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q151",
+      "question_en": "What happens if I miss too many classes?",
+      "question_zh": "如果我缺课太多会怎样？",
+      "answer_en": "If attendance falls below 70%, you may fail the course, receive an attendance warning, or face disciplinary measures such as suspension or expulsion.",
+      "answer_zh": "出勤率低于70%可能会导致课程不及格、出勤预警或被休学、开除。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.2 Attendance and Class Performance / 出勤与课堂表现",
+      "keywords": [
+        "happens",
+        "many",
+        "classes",
+        "miss"
+      ],
+      "variations": [],
+      "attachments": [
+        {
+          "type": "reference",
+          "title": "Full Text – Regulations on Attendance Warning for International Students (ZJNU, 2020)",
+          "url": "attachments/regulations/attendance_warning_international_students.pdf"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "id": "q152",
+      "question_en": "How is the attendance rate calculated?",
+      "question_zh": "出勤率如何计算？",
+      "answer_en": "The attendance rate is determined by comparing the number of classes you attended to the total number of classes you should attend.\n\n$$ \\text{Attendance Rate} = \\frac{\\text{Classes Attended}}{\\text{Total Classes}} \\times 100\\% $$\n\nIf your attendance rate falls below 70%, you may fail the course or face a disciplinary warning.",
+      "answer_zh": "出勤率通过比较实际出勤次数与应出勤次数计算：\n\n$$ \\text{出勤率} = \\frac{\\text{实际出勤次数}}{\\text{应出勤次数}} \\times 100\\% $$\n\n如果出勤率低于70%，可能会导致课程不及格或受到纪律警告。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.3 Attendance Warning System / 出勤预警制度",
+      "keywords": [
+        "rate",
+        "attendance",
+        "calculated"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q153",
+      "question_en": "What are the attendance warning levels and conditions?",
+      "question_zh": "出勤预警等级及条件是什么？",
+      "answer_en": "There are two levels of attendance warning:\n\n| **Warning Level** | **Condition** | **Action** |\n|------------------|---------------|-------------|\n| Level II | Monthly absence rate without leave > 20% | Face-to-face warning and written notice |\n| Level I | Monthly or total semester absence rate > 30% | May lead to expulsion if repeated |\n\nRepeated Level II warnings or failure to improve after a Level I warning can result in expulsion.",
+      "answer_zh": "出勤预警分为两个等级：\n\n| **预警等级** | **条件** | **处理措施** |\n|--------------|------------|----------------|\n| 二级预警 | 月无故缺勤率超过20% | 面对面谈话并发放书面预警通知 |\n| 一级预警 | 月或学期累计无故缺勤率超过30% | 若再次发生可能被开除 |\n\n连续收到二级预警或未改进者将被开除。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.3 Attendance Warning System / 出勤预警制度",
+      "keywords": [
+        "warning",
+        "levels",
+        "conditions",
+        "attendance"
+      ],
+      "variations": [
+        "What is the attendance warning levels and conditions?"
+      ],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q154",
+      "question_en": "What is the procedure for issuing an attendance warning?",
+      "question_zh": "出勤预警的发放程序是什么？",
+      "answer_en": "Attendance warnings must be given **before the 7th of each month**. They are issued face-to-face and recorded in writing. The notice must include:\n\n- Date and location of the meeting\n- Summary of discussion\n- Signatures of both the student and the counselor\n\nOne copy remains with the student, and another is kept by the college. If the student refuses to sign, two staff witnesses must co-sign instead.",
+      "answer_zh": "出勤预警须在**每月7日前**进行面对面谈话并书面记录。通知内容包括：\n\n- 谈话时间与地点\n- 谈话内容摘要\n- 学生与辅导员签名\n\n学院与学生各留一份。如学生拒签，应由两名工作人员共同签字确认。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.3 Attendance Warning System / 出勤预警制度",
+      "keywords": [
+        "procedure",
+        "warning",
+        "attendance",
+        "issuing"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q155",
+      "question_en": "What happens if I ignore or repeatedly receive attendance warnings?",
+      "question_zh": "如果我忽视或多次收到出勤预警会怎样？",
+      "answer_en": "If you receive a Level II warning twice or a Level I warning without improvement, you may be **expelled from the university**. Failure to attend a mandatory warning meeting also counts as a serious violation and can result in expulsion.",
+      "answer_zh": "若连续两次收到二级预警或在一级预警后仍未改进，将被**开除学籍**。无故不参加预警谈话视为严重违规行为，也可能被开除。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.3 Attendance Warning System / 出勤预警制度",
+      "keywords": [
+        "attendance",
+        "warnings",
+        "repeatedly",
+        "ignore",
+        "happens",
+        "receive"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q156",
+      "question_en": "Will attendance records affect my visa or student status?",
+      "question_zh": "出勤记录会影响签证或学籍吗？",
+      "answer_en": "Yes. Attendance data are submitted as part of visa applications. Students with repeated warnings face **higher risk of visa rejection** or **academic dismissal**.",
+      "answer_zh": "会。出勤数据将作为签证申请的重要材料。多次收到预警的学生面临**签证被拒或学籍取消**的风险。",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.3 Attendance Warning System / 出勤预警制度",
+      "keywords": [
+        "visa",
+        "attendance",
+        "records",
+        "affect",
+        "student",
+        "status",
+        "will"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q157",
+      "question_en": "Who manages attendance checks and what methods are used?",
+      "question_zh": "谁负责出勤检查？采用哪些方式？",
+      "answer_en": "Each college or research institute is responsible for conducting attendance checks. Methods include:\n\n- Weekly card scanning (usually every Tuesday and Thursday)\n- Attendance for key activities or internships\n- Both online and offline verification methods",
+      "answer_zh": "各学院（研究院）负责出勤检查，方式包括：\n\n- 每周打卡（一般为周二、周四）\n- 重要活动或实习考勤\n- 线上与线下结合的考勤方式",
+      "category": "Disciplinary & Attendance Rules / 纪律与考勤规定",
+      "subcategory": "7.3 Attendance Warning System / 出勤预警制度",
+      "keywords": [
+        "checks",
+        "attendance",
+        "used",
+        "manages",
+        "methods"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q158",
+      "question_en": "Where can I find the laws and regulations that international students in China should follow?",
+      "question_zh": "我在哪里可以查看国际学生在中国应遵守的相关法律法规？",
+      "answer_en": "You can access key national laws and university regulations related to foreign students’ stay and study in China on the Zhejiang Normal University (ZJNU) website. Below are the most relevant ones:\n\n1. **Regulations of the People's Republic of China on Administration of the Entry and Exit of Foreigners**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314863/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314863/page.htm)\n\n2. **Anti-Drug Law of the People's Republic of China**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314862/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314862/page.htm)\n\n3. **Law of the People's Republic of China on Penalties for Administration of Public Security**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314869/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314869/page.htm)\n\n4. **Rules for the Implementation of the Provisions on the Administration of Religious Activities of Aliens within the Territory of the People's Republic of China**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314864/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314864/page.htm)\n\nThese laws outline entry/exit management, public security, anti-drug measures, and rules for religious activities for foreigners in China.",
+      "answer_zh": "可在浙江师范大学国际处网站上查阅国际学生在华学习和生活需遵守的主要法律法规，具体如下：\n\n1. **《中华人民共和国外国人入境出境管理条例》**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314863/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314863/page.htm)\n\n2. **《中华人民共和国禁毒法》**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314862/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314862/page.htm)\n\n3. **《中华人民共和国治安管理处罚法》**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314869/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314869/page.htm)\n\n4. **《中华人民共和国境内外国人宗教活动管理规定实施细则》**  \n[http://wsc.zjnu.edu.cn/2020/0106/c6607a314864/page.htm](http://wsc.zjnu.edu.cn/2020/0106/c6607a314864/page.htm)\n\n以上法规涵盖外国人在中国的出入境管理、治安处罚、禁毒和宗教活动管理等内容。",
+      "category": "Useful Laws and Forms / 常用法律与表格",
+      "subcategory": "8.1 Useful Laws & Regulations / 常用法律法规",
+      "keywords": [
+        "find",
+        "laws",
+        "china",
+        "follow",
+        "international",
+        "should",
+        "that",
+        "students"
+      ],
+      "variations": ["As an international students what laws and regulations I have to follow?"],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q159",
+      "question_en": "Why should international students be familiar with Chinese laws and university regulations?",
+      "question_zh": "为什么国际学生需要熟悉中国的法律法规和学校规章制度？",
+      "answer_en": "Understanding these laws helps ensure a safe, lawful, and positive study experience in China. Violations—such as illegal residence, employment, drug use, or disturbance of public order—can result in disciplinary actions or legal penalties including fines, detention, or deportation.",
+      "answer_zh": "了解中国的法律法规有助于保障在华学习生活的安全与合法性。违反相关法律，如非法居留、非法就业、吸毒、扰乱公共秩序等，可能会受到纪律处分甚至罚款、拘留或遣返等法律处罚。",
+      "category": "Useful Laws and Forms / 常用法律与表格",
+      "subcategory": "8.1 Useful Laws & Regulations / 常用法律法规",
+      "keywords": [
+        "familiar",
+        "chinese",
+        "laws",
+        "international",
+        "should",
+        "with",
+        "students",
+        "university"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q160",
+      "question_en": "Where can I download commonly used forms for international students at ZJNU?",
+      "question_zh": "我可以在哪里下载浙师大国际学生常用表格？",
+      "answer_en": "All official forms for international students can be downloaded from the ZJNU International Office website. Below are the most frequently used forms:\n\n- Commitment for the Safe Use of Electrical Appliances in Student Apartment  \n- Disengagement Slip for Withdrawn International Students  \n- Application for Program Change (Graduate or Undergraduate)  \n- Leave Application Forms  \n- Off-Campus Residence Registration  \n- Refund Application  \n- Holiday Travel Plan  \n- Attendance Warning Notification",
+      "answer_zh": "所有国际学生常用表格可在浙江师范大学国际处网站下载，包括：\n\n- 学生寝室电器安全使用承诺书\n- 退学国际学生离校通知书\n- 国际研究生/本科生转专业审批表\n- 各类请假单\n- 校外住宿登记表\n- 退费申请表\n- 节假日去向表\n- 考勤预警通知书",
+      "category": "Useful Laws and Forms / 常用法律与表格",
+      "subcategory": "8.2 Useful Forms / 学生常用表格下载",
+      "keywords": [
+        "commonly",
+        "forms",
+        "zjnu",
+        "used",
+        "download",
+        "international",
+        "students"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    },
+    {
+      "id": "q161",
+      "question_en": "Why should I use the official ZJNU forms?",
+      "question_zh": "为什么必须使用学校提供的官方表格？",
+      "answer_en": "Official forms ensure proper documentation, recognition by university departments, and consistent formatting. Unofficial or altered forms may be rejected during processing.",
+      "answer_zh": "官方表格可确保文档格式统一、信息准确，并受校内各部门认可。使用非官方或修改版表格可能会被拒绝受理。",
+      "category": "Useful Laws and Forms / 常用法律与表格",
+      "subcategory": "8.2 Useful Forms / 学生常用表格下载",
+      "keywords": [
+        "zjnu",
+        "should",
+        "official",
+        "forms"
+      ],
+      "variations": [],
+      "attachments": [],
+      "priority": 1
+    }
+  ],
+  "metadata": {
+    "total_questions": 161,
+    "last_updated": "2025-01-01",
+    "version": "2.0",
+    "source": "handbook_2025.json"
+  }
+}

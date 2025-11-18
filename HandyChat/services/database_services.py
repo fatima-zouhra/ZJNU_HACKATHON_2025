@@ -47,8 +47,6 @@ class DatabaseService:
                 'schedule_day': schedule.day_of_week if schedule else None,
                 'schedule_time': f"{schedule.start_time} - {schedule.end_time}" if schedule else None,
                 'teacher_name': teacher.name if teacher else None,
-                'teacher_contact': teacher.contact_info if teacher else None,
-                'teacher_email': teacher.email if teacher else None,
                 'images': location.image_urls if hasattr(location, 'image_urls') else []
             }
             
@@ -116,5 +114,4 @@ class DatabaseService:
             logger.error(f"Error searching classes by teacher: {e}")
             return []
 
-# Global instance
 database_service = DatabaseService()
