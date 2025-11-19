@@ -51,5 +51,5 @@ def home():
     return jsonify({"message": "Simple Find My PE Class API", "status": "running"})
 
 if __name__ == '__main__':
-    print("🚀 Starting SIMPLE Find My PE Class API...")
+    print("Starting SIMPLE Find My PE Class API...")
     app.run(debug=True, port=5001)
