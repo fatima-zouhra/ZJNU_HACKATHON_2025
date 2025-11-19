@@ -14,8 +14,7 @@ load_dotenv()
 def test_mysql():
     try:
         
-        db_url = os.getenv("DATABASE_URL") # mysql+pymysql://hackathon_user:HK2025@localhost/hackathon_team10_db
-        
+        db_url = os.getenv("DATABASE_URL") 
         
         # Parse the URL
         parts = db_url.split('//')[1].split('@')
