@@ -125,5 +125,5 @@ A quick walkthrough of Handy & HandyChat is available on YouTube:
 
 ▶️ https://youtu.be/sILAd6U6Ehw
 
-📄 Business Plan PDF
-(https://github.com/fatima-zouhra/ZJNU_HACKATHON_2025_TEAM10/blob/main/BUSINESS_PLAN.pdf)
+📄 Business Plan PDF:
+https://github.com/fatima-zouhra/ZJNU_HACKATHON_2025_TEAM10/blob/main/BUSINESS_PLAN.pdf
