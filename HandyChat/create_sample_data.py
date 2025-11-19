@@ -1,9 +1,5 @@
-
-#========================================================#
-# this script creates sample data for PE classes, locations, teachers, schedules, and handbook data
-#========================================================#
 from app import create_app
-from models import db, Location, Teacher, SportClass, ClassSchedule, HandbookCategory, HandbookSection, HandbookFAQ
+from models import db, Location, Teacher, SportClass, ClassSchedule
 from datetime import datetime
 
 def create_sample_data():
@@ -16,18 +12,14 @@ def create_sample_data():
             db.session.query(SportClass).delete()
             db.session.query(Teacher).delete()
             db.session.query(Location).delete()
-            # Clear handbook data too
-            db.session.query(HandbookFAQ).delete()
-            db.session.query(HandbookSection).delete()
-            db.session.query(HandbookCategory).delete()
             db.session.commit()
-            print("✅ Cleared existing data")
+            print("Cleared existing data")
         except Exception as e:
             print(f"❌ Clear data error: {e}")
             db.session.rollback()
         
         current_time = datetime.utcnow()
-        # Create locations
+        
         gym_location = Location(
             name="North Gymnasium",
             building="Sports Complex A",
@@ -160,7 +152,6 @@ def create_sample_data():
             created_at=current_time
         )
         
-        # Create teachers
         coach_zhang = Teacher(
             name="Coach Zhang Wei",
             created_at=current_time
@@ -215,7 +206,6 @@ def create_sample_data():
             db.session.rollback()
             raise
         
-        # Create sport classes
         try:
             basketball = SportClass(
                 name="basketball",
@@ -289,7 +279,6 @@ def create_sample_data():
             db.session.rollback()
             raise
         
-        # Create class schedules
         try:
             schedules = [
                 
@@ -328,7 +317,7 @@ def create_sample_data():
             db.session.rollback()
             raise
         
-        print("🎉 PE Sample data creation completed!")
+        print("PE Sample data creation completed!")
         print("Final Summary:")
         print("   - 8 locations with multiple images")
         print("   - 8 teachers with contact information") 
@@ -342,7 +331,7 @@ def create_handbook_data():
         from services.handbook_db_service import handbook_db_service
         success = handbook_db_service.initialize_handbook_data()
         if success:
-            print("✅ Handbook data created successfully")
+            print("Handbook data created successfully")
         else:
             print("❌ Failed to create handbook data")
 
