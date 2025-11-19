@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Handy — Home</title>
+
+  <!-- FIXED PATH -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="page-wrap">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo-ball" aria-hidden="true"></div>
+          <div>
+            <h1>Handy</h1>
+            <p class="muted">Your All-in-One ZJNU Campus Companion</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="/" class="active">Home</a>
+          <a href="/signin">Sign in</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-wrap">
+      <div class="container">
+
+        <div class="background-container"></div>
+
+        <section class="left card">
+          <div class="left-hero">
+              <p class="hero-text">
+                🎓 <strong>Handy</strong> gives ZJNU students one place to find everything — campus locations, services, offices, sports areas, 
+                daily essentials, and handbook rules.<br><br>
+                Meet <strong>HandyChat</strong>, the AI assistant that helps you navigate campus life in seconds.
+              </p>
+
+              <!-- FIXED PATH -->
+              <a href="/chat" class="hero-chat-link" aria-label="Open chat">
+                <img src="/static/images/chat logo.png" alt="Open Chat" />
+              </a>
+            </div>
+        </section>
+
+      <section class="right card mapCard">
+
+        <div class="map" id="map">
+          <!-- FIXED PATH -->
+          <img src="/static/images/school map.jpg" alt="School Map" class="school-map-photo" />
+        </div>
+
+        <div class="info-cards-container">
+
+          <!-- Block 1 -->
+          <div class="info card small" id="infoPanel">
+            <h3 id="locName">MOST FREQUENT QUESTIONS</h3>
+
+            <div class="photos-wrapper" id="infoPictureWrapper">
+              <!-- FIXED PATH -->
+              <img src="/static/images/pe app logo.jpg" alt="PE App Logo" />
+            </div>
+
+            <p class="muted">运动世界校园版 - 大学生校园趣味运动 —  
+            This is the app students use to complete their running tasks.</p>
+
+            <a class="btn primary" href="/chat">Learn More</a>
+
+            <div class="photos" id="photos"></div>
+            <div class="meta" id="meta"></div>
+          </div>
+
+          <!-- Block 2 -->
+          <div class="info card small" id="locationsPanel">
+            <h3>LOCATIONS YOU MAY NEED</h3>
+
+            <div class="photos-wrapper">
+              <!-- FIXED PATH -->
+              <img src="/static/images/locations you may need.webp" alt="Campus Locations" />
+            </div>
+
+            <p class="muted">Explore key locations you’ll need — from campus facilities to nearby amenities and services.</p>
+
+            <button class="btn primary"
+              onclick="window.open('https://mp.weixin.qq.com/s/z0C4xPI6yz0p4SLS8Qy9vQ', '_blank')">
+              View Locations
+            </button>
+
+            <div class="photos" id="locationsPhotos"></div>
+            <div class="meta" id="locationsMeta"></div>
+          </div>
+
+          <!-- Block 3 -->
+          <div class="info card small" id="teamPanel">
+            <h3>SHINING TEAM</h3>
+            <div class="photos-wrapper" id="teamPictureWrapper"></div>
+            <p class="muted">Meet our dedicated team members.</p>
+            <div class="photos" id="teamPhotos"></div>
+            <div class="meta" id="teamMeta"></div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot card" style="text-align: center;">
+      <div>Copyright © 2025-2026</div>
+    </footer>
+  </div>
+
+  <!-- Floating Chat Button -->
+  <a href="/chat" class="floating-chat-btn">
+    <div class="chat-icon">
+      <!-- FIXED PATH -->
+      <img src="/static/images/chat logo.png" alt="Open Chat" />
+    </div>
+    <div class="chat-text">ASK ME!</div>
+  </a>
+
+  <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+    <span class="theme-icon">🌙</span>
+  </button>
+
+  <!-- FIXED PATH -->
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

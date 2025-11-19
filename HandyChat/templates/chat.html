@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>HandyChat - ZJNU Campus Assistant</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Chat Page Styles - Standalone */
+        :root {
+            --bg: #071026;
+            --card: #081526;
+            --accent: #00d1b2;
+            --muted: #bf9f9f;
+            --glass: rgba(255,255,255,0.03);
+            --text-color: #eaf6f2;
+            --radius: 12px;
+            --maxw: 1100px;
+            --gray: #94a3b8;
+            --light-gray: #cbd5e1;
+        }
+
+        html[data-theme="light"] {
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --accent: #00796b;
+            --muted: #6b7280;
+            --glass: rgba(0,0,0,0.03);
+            --text-color: #0f172a;
+            --gray: #64748b;
+            --light-gray: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            height: 100vh;
+            background: var(--bg);
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 280px;
+            background: var(--card);
+            border-right: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .sidebar-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 20px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #34d399);
+            display: grid;
+            place-items: center;
+            color: white;
+            font-size: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        .logo-text {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .nav-section {
+            padding: 0 20px;
+        }
+
+        .nav-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--muted);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .nav-item:hover {
+            background: rgba(255,255,255,0.05);
+            color: var(--text-color);
+            transform: translateX(4px);
+        }
+
+        .nav-item.active {
+            background: rgba(255,255,255,0.08);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .nav-item i {
+            width: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Chat Area Styles */
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg);
+            position: relative;
+        }
+
+        .chat-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 30px;
+            background: var(--card);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .chat-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 4px;
+        }
+
+        .chat-subtitle {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.4;
+        }
+
+        .user-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            display: grid;
+            place-items: center;
+            color: var(--muted);
+            font-size: 18px;
+            border: 2px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .user-avatar:hover {
+            background: rgba(255,255,255,0.12);
+            color: var(--accent);
+        }
+
+        /* Messages Container */
+        .messages-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background: var(--bg);
+        }
+
+        .message {
+            display: flex;
+            gap: 16px;
+            max-width: 85%;
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        .message.bot {
+            align-self: flex-start;
+        }
+
+        .message.user {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            font-size: 16px;
+        }
+
+        .message.bot .message-avatar {
+            background: linear-gradient(135deg, var(--accent), #34d399);
+            color: white;
+        }
+
+        .message.user .message-avatar {
+            background: rgba(255,255,255,0.08);
+            color: var(--muted);
+        }
+
+        .message-content {
+            background: var(--card);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 20px rgba(2,6,23,0.3);
+            border: 1px solid rgba(255,255,255,0.08);
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+
+        .message-content:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(2,6,23,0.4);
+        }
+
+        .message.user .message-content {
+            background: rgba(0,209,178,0.1);
+            border-color: rgba(0,209,178,0.2);
+        }
+
+        .response-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 8px;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: rgba(255,255,255,0.06);
+            transform: translateY(-2px);
+        }
+
+        .info-item i {
+            color: var(--accent);
+            width: 16px;
+        }
+
+        /* Quick Actions */
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .quick-btn {
+            padding: 10px 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            font-size: 13px;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .quick-btn:hover {
+            background: var(--accent);
+            color: #042024;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,209,178,0.3);
+        }
+
+        /* Input Area */
+        .input-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 30px;
+            background: var(--card);
+            border-top: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .input-wrapper {
+            flex: 1;
+            position: relative;
+        }
+
+        .chat-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            background: rgba(255,255,255,0.05);
+            color: var(--text-color);
+            font-size: 15px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.08);
+            box-shadow: 0 0 0 3px rgba(0,209,178,0.1);
+        }
+
+        .chat-input::placeholder {
+            color: var(--muted);
+        }
+
+        .input-icon {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .send-btn {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #042024;
+            font-size: 18px;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,209,178,0.3);
+        }
+
+        .send-btn:hover {
+            background: #00e6c4;
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(0,209,178,0.4);
+        }
+
+        .send-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Enhanced Chat Response Styles */
+        .response-section {
+            margin: 16px 0;
+            padding: 16px;
+            background: rgba(255,255,255,0.03);
+            border-radius: var(--radius);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .response-section:hover {
+            background: rgba(255,255,255,0.05);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
+        .location-details {
+            background: rgba(0,209,178,0.05);
+            border: 1px solid rgba(0,209,178,0.1);
+            border-radius: var(--radius);
+            padding: 16px;
+            margin: 12px 0;
+        }
+
+        .location-title {
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .schedule-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .schedule-badge {
+            padding: 6px 12px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            font-size: 13px;
+            color: var(--text-color);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .map-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .map-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .amap-btn {
+            background: rgba(0,209,178,0.1);
+            color: var(--accent);
+        }
+
+        .baidu-btn {
+            background: rgba(59,130,246,0.1);
+            color: #3b82f6;
+        }
+
+        .map-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .amap-btn:hover {
+            background: rgba(0,209,178,0.2);
+        }
+
+        .baidu-btn:hover {
+            background: rgba(59,130,246,0.2);
+        }
+
+        /* Suggestions and Quick Actions */
+        .suggestions {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .suggestion-title {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .suggestion-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .suggestion-btn {
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            color: var(--text-color);
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .suggestion-btn:hover {
+            background: var(--accent);
+            color: #042024;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,209,178,0.3);
+        }
+
+        /* Typing Indicator */
+        .typing-dots {
+            display: flex;
+            gap: 4px;
+        }
+
+        .typing-dots span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--muted);
+            animation: typingBounce 1.4s infinite ease-in-out;
+        }
+
+        .typing-dots span:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes typingBounce {
+            0%, 80%, 100% { 
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            40% { 
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Modal Styles for Map */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(7, 16, 38, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            position: relative;
+            background: var(--card);
+            margin: 2% auto;
+            padding: 0;
+            width: 90%;
+            height: 90%;
+            border-radius: var(--radius);
+            box-shadow: 0 20px 60px rgba(2,6,23,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.03);
+        }
+
+        .modal-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--muted);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: var(--text-color);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .modal-body {
+            flex: 1;
+            padding: 20px;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .campus-map {
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .modal-controls {
+            display: flex;
+            gap: 12px;
+            padding: 20px 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.03);
+        }
+
+        .control-btn {
+            padding: 10px 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .control-btn:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        .control-btn.primary {
+            background: var(--accent);
+            color: #042024;
+            font-weight: 600;
+        }
+
+        .control-btn.primary:hover {
+            background: #00e6c4;
+            box-shadow: 0 4px 15px rgba(0,209,178,0.3);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle-chat {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.04);
+            color: var(--text-color);
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+            z-index: 1100;
+            border: 1px solid rgba(255,255,255,0.04);
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle-chat:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        /* Scrollbar Styling */
+        .messages-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .messages-container::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.02);
+            border-radius: 3px;
+        }
+
+        .messages-container::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+        }
+
+        .messages-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+            
+            .sidebar-content {
+                flex-direction: row;
+                overflow-x: auto;
+                gap: 20px;
+            }
+            
+            .logo {
+                padding: 0 15px;
+                border-bottom: none;
+                border-right: 1px solid rgba(255,255,255,0.08);
+            }
+            
+            .nav-section {
+                padding: 0 15px;
+                white-space: nowrap;
+            }
+            
+            .nav-title {
+                display: none;
+            }
+            
+            .nav-item {
+                margin-bottom: 0;
+            }
+            
+            .chat-header {
+                padding: 15px 20px;
+            }
+            
+            .messages-container {
+                padding: 20px;
+            }
+            
+            .message {
+                max-width: 95%;
+            }
+            
+            .input-area {
+                padding: 15px 20px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-actions {
+                flex-direction: column;
+            }
+            
+            .media-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .map-buttons {
+                flex-direction: column;
+            }
+            
+            .map-btn {
+                justify-content: center;
+            }
+            
+            .modal-content {
+                width: 95%;
+                height: 95%;
+                margin: 2.5% auto;
+            }
+            
+            .modal-controls {
+                flex-wrap: wrap;
+            }
+            
+            .control-btn {
+                flex: 1;
+                min-width: 120px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .chat-title {
+                font-size: 18px;
+            }
+            
+            .chat-subtitle {
+                font-size: 12px;
+            }
+            
+            .messages-container {
+                padding: 15px;
+            }
+            
+            .message-content {
+                padding: 15px;
+            }
+            
+            .input-area {
+                padding: 12px 15px;
+            }
+            
+            .chat-input {
+                padding: 12px 45px 12px 15px;
+                font-size: 14px;
+            }
+            
+            .send-btn {
+                width: 44px;
+                height: 44px;
+            }
+            
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .suggestion-buttons {
+                flex-direction: column;
+            }
+            
+            .suggestion-btn {
+                text-align: center;
+            }
+            
+            .schedule-badges {
+                justify-content: center;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="logo-text">HandyChat</div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-title">Main</div>
+                    <div class="nav-item active">
+                        <i class="fas fa-comments"></i>
+                        <span>Chat Assistant</span>
+                    </div>
+                </div>
+
+                <!--<div class="nav-section">
+                    <div class="nav-title">Quick Actions</div>
+                    <div class="nav-item" onclick="askQuickQuestion('Where is basketball class?')">
+                        <i class="fas fa-basketball-ball"></i>
+                        <span>Basketball</span>
+                    </div>
+                    <div class="nav-item" onclick="askQuickQuestion('graduation requirements')">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Graduation</span>
+                    </div>
+                    <div class="nav-item" onclick="askQuickQuestion('visa extension process')">
+                        <i class="fas fa-passport"></i>
+                        <span>Visa Help</span>
+                    </div>
+                    <div class="nav-item" onclick="showSchoolMap()">
+                        <i class="fas fa-map"></i>
+                        <span>Campus Map</span>
+                    </div>
+                </div>-->
+
+                <div class="nav-section" style="margin-top: auto;">
+    <div class="nav-item" style="cursor:pointer" onclick="window.location.href='/'">
+        <i class="fas fa-home"></i>
+        <span>Back to Home</span>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <div>
+                    <div class="chat-title">ZJNU Student Assistant</div>
+                    <div class="chat-subtitle">
+                        Find your PE class, understand your university's handbook, and more!
+                    </div>
+                </div>
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="message bot">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="response-title">
+                            👋 Welcome to HandyChat ZJNU Student Assistant!
+                        </div>
+                        <p style="margin-top: 8px; color: var(--muted)">
+                            I can help you with:
+                        </p>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-basketball-ball"></i> PE Class Locations
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i> Schedules & Teachers
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-book"></i> Handbook Policies
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i> Graduation Requirements
+                            </div>
+                        </div>
+                        <div class="quick-actions">
+                            <div class="quick-btn" onclick="askQuickQuestion('Where is basketball class?')">
+                                🏀 Basketball Class
+                            </div>
+                            <div class="quick-btn" onclick="askQuickQuestion('graduation requirements')">
+                                🎓 Graduation Info
+                            </div>
+                            <div class="quick-btn" onclick="askQuickQuestion('visa extension process')">
+                                🛂 Visa Help
+                            </div>
+                            <div class="quick-btn" onclick="showSchoolMap()">
+                                🗺️ Campus Map
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input
+                        type="text"
+                        class="chat-input"
+                        id="chatInput"
+                        placeholder="Ask about PE classes, handbook policies, or anything else..."
+                    />
+                    <div class="input-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <button class="send-btn" onclick="askQuestion()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- School Map Modal -->
+    <div id="schoolMapModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">ZJNU Campus Map</div>
+                <button class="modal-close" onclick="closeSchoolMap()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="static/images/school map.jpg" alt="ZJNU Campus Map" class="campus-map" />
+            </div>
+            <div class="modal-controls">
+                <button class="control-btn" onclick="zoomIn()">
+                    <i class="fas fa-search-plus"></i> Zoom In
+                </button>
+                <button class="control-btn" onclick="zoomOut()">
+                    <i class="fas fa-search-minus"></i> Zoom Out
+                </button>
+                <button class="control-btn" onclick="resetMap()">
+                    <i class="fas fa-sync"></i> Reset
+                </button>
+                <div style="flex: 1"></div>
+                <button class="control-btn primary" onclick="downloadMap()">
+                    <i class="fas fa-download"></i> Download Map
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle-chat" aria-label="Toggle theme" onclick="toggleTheme()">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+   <script>
+    const KEY = 'fmpe_theme_mode';
+
+    function toggleTheme() {
+        const html = document.documentElement;
+        const current = html.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        const next = current === 'light' ? 'dark' : 'light';
+        applyTheme(next);
+    }
+
+    function applyTheme(mode) {
+        const html = document.documentElement;
+        if (mode === 'light') {
+            html.setAttribute('data-theme', 'light');
+        } else {
+            html.removeAttribute('data-theme');
+        }
+        localStorage.setItem(KEY, mode);
+
+        const themeIcon = document.querySelector('.theme-icon');
+        if (themeIcon) {
+            themeIcon.textContent = mode === 'light' ? '🌙' : '☀️';
+        }
+    }
+
+    try {
+        const saved = localStorage.getItem(KEY);
+        if (saved) {
+            applyTheme(saved);
+        } else {
+            applyTheme('dark');
+        }
+    } catch (e) {
+        // ignore
+    }
+    const API_BASE = '/api/chat';
+
+    async function askQuestion() {
+        const input = document.getElementById('chatInput');
+        const question = input.value.trim();
+        if (!question) return;
+
+        addUserMessage(question);
+        input.value = '';
+        showTypingIndicator();
+
+        try {
+            const res = await fetch(`${API_BASE}/ask`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ question })
+            });
+
+            const data = await res.json().catch(() => ({}));
+            hideTypingIndicator();
+
+            if (!res.ok) {
+                handleErrorResponse(data, question);
+                return;
+            }
+
+            renderBotResponse(data, question);
+        } catch (err) {
+            console.error('Chat error:', err);
+            hideTypingIndicator();
+            addBotMessage(
+                "Sorry, I couldn't reach the server right now. Please check your connection or try again in a moment."
+            );
+        }
+    }
+
+    function askQuickQuestion(question) {
+        const input = document.getElementById('chatInput');
+        input.value = question;
+        askQuestion();
+    }
+
+    // ============================
+    // RESPONSE ROUTING
+    // ============================
+    function renderBotResponse(data, originalQuestion) {
+        const type = (data.type || '').toLowerCase();
+        const status = (data.status || '').toLowerCase();
+
+        // Prefer explicit type, then fall back to status
+        if (type === 'pe') {
+            showPEClassResponse(data, originalQuestion);
+        } else if (type === 'handbook') {
+            showHandbookResponse(data, originalQuestion);
+        } else if (type === 'clarification' || status === 'clarify_needed') {
+            showClarificationResponse(data, originalQuestion);
+        } else if (type === 'combined' || type === 'combined_ai' || type === 'ai_fallback') {
+            showCombinedResponse(data, originalQuestion);
+        } else {
+            // Generic fallback 
+            const text =
+                data.response ||
+                data.answer ||
+                data.error ||
+                "I'm not sure how to answer that yet, but I'm still learning!";
+            addBotMessage(formatTextContent(text, originalQuestion));
+        }
+    }
+
+    function handleErrorResponse(data, originalQuestion) {
+        const msg =
+            data && data.error
+                ? data.error
+                : 'Sorry, something went wrong while processing your question.';
+        addBotMessage(
+            `
+            <div class="response-title"><i class="fas fa-exclamation-triangle"></i> Error</div>
+            <p style="margin-top: 8px;">${escapeHtml(msg)}</p>
+            <p style="margin-top: 8px; font-size: 13px; color: var(--muted);">
+                You can try asking again, or rephrase your question.
+            </p>
+        `,
+            true
+        );
+    }
+
+    // ============================
+    // MESSAGE HELPERS
+    // ============================
+    function addUserMessage(text) {
+        const container = document.getElementById('messagesContainer');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'message user';
+        messageDiv.innerHTML = `
+            <div class="message-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="message-content">
+                <div class="response-title">You</div>
+                <p style="margin-top: 8px; color: var(--text-color)">${escapeHtml(text)}</p>
+            </div>
+        `;
+        container.appendChild(messageDiv);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function addBotMessage(content, isHTML = false) {
+        addMessage(content, 'bot', isHTML);
+    }
+
+    function addMessage(content, sender, isHTML = false) {
+        const container = document.getElementById('messagesContainer');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${sender}`;
+
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'message-avatar';
+        avatarDiv.innerHTML = sender === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-robot"></i>';
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'message-content';
+
+        if (isHTML) {
+            contentDiv.innerHTML = content;
+        } else {
+            contentDiv.textContent = content;
+        }
+
+        messageDiv.appendChild(avatarDiv);
+        messageDiv.appendChild(contentDiv);
+        container.appendChild(messageDiv);
+
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function showTypingIndicator() {
+        const container = document.getElementById('messagesContainer');
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'message bot';
+        typingDiv.id = 'typingIndicator';
+
+        typingDiv.innerHTML = `
+            <div class="message-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="message-content">
+                <div style="display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 14px;">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    Assistant is typing...
+                </div>
+            </div>
+        `;
+
+        container.appendChild(typingDiv);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function hideTypingIndicator() {
+        const typingIndicator = document.getElementById('typingIndicator');
+        if (typingIndicator) typingIndicator.remove();
+    }
+
+    // ============================
+    // PE CLASS RENDERER (DYNAMIC)
+    // ============================
+    function showPEClassResponse(data, originalQuestion) {
+        const sportName = (data.sport || 'PE').toString();
+        const titleSport =
+            sportName.charAt(0).toUpperCase() + sportName.slice(1);
+        const emoji = getSportEmoji(sportName);
+        const baseText = data.response || '';
+
+        let html = '';
+
+        html += `<div class="response-title">${emoji} ${escapeHtml(titleSport)} Class</div>`;
+        html += `<p>${formatTextContent(baseText)}</p>`;
+
+        // Location
+        const loc = data.location_details || {};
+        if (loc && (loc.name || loc.building || loc.floor || loc.room_number || loc.description)) {
+            html += `<div class="location-details">`;
+            html += `<div class="location-title"><i class="fas fa-map-marker-alt"></i> ${escapeHtml(
+                loc.name || 'Class Location'
+            )}</div>`;
+            html += `<div class="info-grid">`;
+            if (loc.building)
+                html += `<div class="info-item"><i class="fas fa-building"></i> ${escapeHtml(
+                    loc.building
+                )}</div>`;
+            if (loc.floor)
+                html += `<div class="info-item"><i class="fas fa-layer-group"></i> ${escapeHtml(
+                    loc.floor
+                )}</div>`;
+            if (loc.room_number)
+                html += `<div class="info-item"><i class="fas fa-door-open"></i> Room ${escapeHtml(
+                    String(loc.room_number)
+                )}</div>`;
+            html += `</div>`;
+            if (loc.description)
+                html += `<p style="margin-top: 10px; color: var(--muted); font-size: 14px;">${escapeHtml(
+                    loc.description
+                )}</p>`;
+            html += `</div>`;
+        }
+
+        // Schedule
+        const sched = data.schedule || {};
+        if (sched.day || sched.time || sched.semester) {
+            html += `<div class="response-section">`;
+            html += `<div class="response-title"><i class="fas fa-calendar"></i> Schedule</div>`;
+            html += `<div class="schedule-badges">`;
+            if (sched.day) html += `<div class="schedule-badge">${escapeHtml(sched.day)}</div>`;
+            if (sched.time) html += `<div class="schedule-badge">${escapeHtml(sched.time)}</div>`;
+            if (sched.semester)
+                html += `<div class="schedule-badge">${escapeHtml(sched.semester)}</div>`;
+            html += `</div></div>`;
+        }
+
+        // Teacher
+        const teacher = data.teacher || {};
+        if (teacher.name || teacher.contact || teacher.email) {
+            html += `<div class="response-section">`;
+            html += `<div class="response-title"><i class="fas fa-chalkboard-teacher"></i> Instructor</div>`;
+            html += `<div class="info-grid">`;
+            if (teacher.name)
+                html += `<div class="info-item"><i class="fas fa-user"></i> ${escapeHtml(
+                    teacher.name
+                )}</div>`;
+            if (teacher.contact)
+                html += `<div class="info-item"><i class="fas fa-phone"></i> ${escapeHtml(
+                    teacher.contact
+                )}</div>`;
+            if (teacher.email)
+                html += `<div class="info-item"><i class="fas fa-envelope"></i> ${escapeHtml(
+                    teacher.email
+                )}</div>`;
+            html += `</div></div>`;
+        }
+
+        // Maps
+        const maps = data.maps || {};
+        if ((maps.amap_link && maps.amap_link !== '#') || (maps.baidu_map_link && maps.baidu_map_link !== '#')) {
+            html += `<div class="response-section">`;
+            html += `<div class="response-title"><i class="fas fa-map"></i> Find it on Map</div>`;
+            html += `<div class="map-buttons">`;
+            if (maps.amap_link && maps.amap_link !== '#') {
+                html += `
+                    <a class="map-btn amap-btn" href="${escapeAttr(maps.amap_link)}" target="_blank" rel="noopener">
+                        <i class="fas fa-location-arrow"></i> Open in AMap
+                    </a>
+                `;
+            }
+            if (maps.baidu_map_link && maps.baidu_map_link !== '#') {
+                html += `
+                    <a class="map-btn baidu-btn" href="${escapeAttr(maps.baidu_map_link)}" target="_blank" rel="noopener">
+                        <i class="fas fa-map-marked-alt"></i> Open in Baidu Maps
+                    </a>
+                `;
+            }
+            html += `</div></div>`;
+        }
+
+        // Images (if any)
+        if (Array.isArray(data.images) && data.images.length > 0) {
+            html += `<div class="response-section">`;
+            html += `<div class="response-title"><i class="fas fa-image"></i> Location Preview</div>`;
+            html += `<div class="info-grid">`;
+            data.images.slice(0, 3).forEach((src) => {
+                const safeSrc = escapeAttr(src);
+                html += `
+                    <div class="info-item" style="padding: 6px;">
+                        <img src="${safeSrc}" alt="Location image" style="width:100%; border-radius:8px; display:block;">
+                    </div>
+                `;
+            });
+            html += `</div></div>`;
+        }
+
+        // AI tag / original question
+        if (data.ai_enhanced) {
+            html += `
+                <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: var(--muted);">
+                    <i class="fas fa-robot"></i> AI Enhanced • Your question: "${escapeHtml(originalQuestion)}"
+                </div>
+            `;
+        }
+
+        addBotMessage(html, true);
+    }
+
+    // ============================
+    // HANDBOOK RENDERER
+    // ============================
+    function showHandbookResponse(data, originalQuestion) {
+        let html = '';
+
+        html += `<div class="response-title"><i class="fas fa-book"></i> Handbook Information</div>`;
+        html += `<div class="response-content">`;
+
+        const content = data.answer || data.response || '';
+        html += `<p>${formatTextContent(content)}</p>`;
+        html += `</div>`;
+
+        html += `
+            <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: var(--muted);">
+        `;
+
+        if (data.source) {
+            html += `<div><i class="fas fa-database"></i> Source: ${escapeHtml(data.source)}</div>`;
+        }
+        if (data.ai_enhanced) {
+            html += `<div><i class="fas fa-robot"></i> AI Enhanced</div>`;
+        }
+
+        html += `<div>Your question: "${escapeHtml(originalQuestion)}"</div>`;
+        html += `</div>`;
+
+        addBotMessage(html, true);
+    }
+
+    // ============================
+    // CLARIFICATION RENDERER
+    // ============================
+    function showClarificationResponse(data, originalQuestion) {
+        let html = '';
+
+        html += `<div class="response-title"><i class="fas fa-question-circle"></i> I need a bit more detail</div>`;
+        html += `<p>${formatTextContent(data.response || "Could you clarify your question a little?")}</p>`;
+
+        if (Array.isArray(data.available_sports) && data.available_sports.length > 0) {
+            html += `<div class="response-section">`;
+            html += `<div class="response-title"><i class="fas fa-basketball-ball"></i> Available Sports</div>`;
+            html += `<div class="schedule-badges">`;
+            data.available_sports.forEach((sport) => {
+                html += `<div class="schedule-badge">${escapeHtml(sport)}</div>`;
+            });
+            html += `</div></div>`;
+        }
+
+        if (Array.isArray(data.suggestions) && data.suggestions.length > 0) {
+            html += `<div class="suggestions">`;
+            html += `<div class="suggestion-title">Try one of these questions:</div>`;
+            html += `<div class="suggestion-buttons">`;
+            data.suggestions.forEach((q) => {
+                const escaped = escapeHtml(q);
+                html += `<button class="suggestion-btn" onclick="askQuickQuestion('${escaped.replace(
+                    /'/g,
+                    "\\'"
+                )}')">${escaped}</button>`;
+            });
+            html += `</div></div>`;
+        }
+
+        addBotMessage(html, true);
+    }
+
+    // ============================
+    // COMBINED / GENERIC RENDERER
+    // ============================
+    function showCombinedResponse(data, originalQuestion) {
+        let html = '';
+
+        html += `<div class="response-title"><i class="fas fa-link"></i> Combined Information</div>`;
+        html += `<p>${formatTextContent(data.response || '')}</p>`;
+
+        if (Array.isArray(data.suggestions) && data.suggestions.length > 0) {
+            html += `<div class="suggestions">`;
+            html += `<div class="suggestion-title">You can also ask:</div>`;
+            html += `<div class="suggestion-buttons">`;
+            data.suggestions.forEach((q) => {
+                const escaped = escapeHtml(q);
+                html += `<button class="suggestion-btn" onclick="askQuickQuestion('${escaped.replace(
+                    /'/g,
+                    "\\'"
+                )}')">${escaped}</button>`;
+            });
+            html += `</div></div>`;
+        }
+
+        addBotMessage(html, true);
+    }
+
+    // ============================
+    // SMALL HELPERS
+    // ============================
+    function getSportEmoji(sport) {
+        if (!sport) return '🎯';
+        const key = sport.toLowerCase();
+        const emojiMap = {
+            basketball: '🏀',
+            swimming: '🏊',
+            tennis: '🎾',
+            badminton: '🏸',
+            soccer: '⚽',
+            football: '⚽',
+            volleyball: '🏐',
+            'table tennis': '🏓',
+            pingpong: '🏓',
+            'ping pong': '🏓',
+            'tai chi': '☯️'
+        };
+        return emojiMap[key] || '🎯';
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text == null ? '' : String(text);
+        return div.innerHTML;
+    }
+
+    function escapeAttr(text) {
+        return escapeHtml(text).replace(/"/g, '&quot;');
+    }
+
+    function formatTextContent(text) {
+        if (!text) return '';
+        const safe = escapeHtml(text);
+        return safe.replace(/\n/g, '<br>');
+    }
+
+    // ============================
+    // CAMPUS MAP MODAL
+    // ============================
+    function showSchoolMap() {
+        const modal = document.getElementById('schoolMapModal');
+        if (modal) {
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        } else {
+            addBotMessage(
+                "The interactive campus map feature is coming soon! For now, you can ask me about specific locations like 'Where is the library?' or 'Where are the basketball courts?'"
+            );
+        }
+    }
+
+    function closeSchoolMap() {
+        const modal = document.getElementById('schoolMapModal');
+        if (modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            resetMap();
+        }
+    }
+
+    function zoomIn() {
+        const map = document.querySelector('.campus-map');
+        if (map) {
+            const currentScale =
+                parseFloat(map.style.transform.replace('scale(', '').replace(')', '')) || 1;
+            map.style.transform = `scale(${Math.min(currentScale + 0.2, 3)})`;
+        }
+    }
+
+    function zoomOut() {
+        const map = document.querySelector('.campus-map');
+        if (map) {
+            const currentScale =
+                parseFloat(map.style.transform.replace('scale(', '').replace(')', '')) || 1;
+            map.style.transform = `scale(${Math.max(currentScale - 0.2, 0.5)})`;
+        }
+    }
+
+    function resetMap() {
+        const map = document.querySelector('.campus-map');
+        if (map) {
+            map.style.transform = 'scale(1)';
+        }
+    }
+
+    function downloadMap() {
+        addBotMessage(
+            "You can download the campus map from the university's official website or visit the administration office for a printed copy."
+        );
+        closeSchoolMap();
+    }
+
+    // ============================
+    // GLOBAL EVENT LISTENERS
+    // ============================
+    document.getElementById('chatInput').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            askQuestion();
+        }
+    });
+
+    window.onclick = function (event) {
+        const modal = document.getElementById('schoolMapModal');
+        if (event.target === modal) {
+            closeSchoolMap();
+        }
+    };
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeSchoolMap();
+        }
+    });
+
+    document.getElementById('chatInput').focus();
+</script>
+
+</body>
+</html>
