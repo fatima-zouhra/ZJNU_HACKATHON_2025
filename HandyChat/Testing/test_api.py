@@ -1,7 +1,3 @@
-
-
-# Testing script for the API
-
 import requests
 import json
 
