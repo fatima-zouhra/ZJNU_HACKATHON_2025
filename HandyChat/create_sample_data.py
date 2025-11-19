@@ -324,19 +324,7 @@ def create_sample_data():
         print("   - 8 sport classes")
         print("   - 17 class schedules")
 
-def create_handbook_data():
-    """Initialize handbook data in database"""
-    app = create_app()
-    with app.app_context():
-        from services.handbook_db_service import handbook_db_service
-        success = handbook_db_service.initialize_handbook_data()
-        if success:
-            print("Handbook data created successfully")
-        else:
-            print("❌ Failed to create handbook data")
 
-# This allows the file to be run directly or imported
 if __name__ == '__main__':
     create_sample_data()
-    create_handbook_data()
-    print("🎉 All sample data creation completed!")
+    print("All sample data creation completed!")
