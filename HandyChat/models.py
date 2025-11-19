@@ -1,13 +1,3 @@
-
-
-
-#========================================================#
-#  This file defines the models (tables) used in our project’s database.
-#  Each model represents a table, and the relationships between models describe how the data is linked.
-#  Flask uses this file to create and manage the database structure automatically.
-
-#  IN SHORT: It builds the structure of our database for the project.
-#========================================================#
 from extensions import db
 from datetime import datetime
 import json
@@ -75,44 +65,4 @@ class ClassSchedule(db.Model):
         return f'<ClassSchedule {self.semester} {self.day_of_week}>'
 
 
-class HandbookCategory(db.Model):
-    __tablename__ = 'handbook_category'  
-    
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    description = db.Column(db.Text)
-    keywords = db.Column(db.Text)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    
-    def __repr__(self):
-        return f'<HandbookCategory {self.name}>'
-
-class HandbookSection(db.Model):
-    __tablename__ = 'handbook_section'  
-    
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), nullable=False)
-    content = db.Column(db.Text, nullable=False)
-    category_id = db.Column(db.Integer, db.ForeignKey('handbook_category.id'))  
-    priority = db.Column(db.Integer, default=1)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    
-    category = db.relationship('HandbookCategory', backref='sections')
-    
-    def __repr__(self):
-        return f'<HandbookSection {self.title}>'
-
-class HandbookFAQ(db.Model):
-    __tablename__ = 'handbook_faq'  
-    
-    id = db.Column(db.Integer, primary_key=True)
-    question = db.Column(db.String(500), nullable=False)
-    answer = db.Column(db.Text, nullable=False)
-    category_id = db.Column(db.Integer, db.ForeignKey('handbook_category.id'))
-    keywords = db.Column(db.Text)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    
-    category = db.relationship('HandbookCategory', backref='faqs')
-    
-    def __repr__(self):
-        return f'<HandbookFAQ {self.question}>'
+stion}>'
