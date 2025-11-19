@@ -24,7 +24,7 @@ def test_json_handbook():
         ]
         
         for question in test_questions:
-            print(f"\n🔍 Testing: '{question}'")
+            print(f"\n Testing: '{question}'")
             result = json_handbook_service.search_handbook(question)
             if result["found"]:
                 best_match = result["results"][0]
