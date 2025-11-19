@@ -1,34 +1,3 @@
-
-# -------------------------------------------------------------
-# HandyChat Application Setup
-#
-# This file is the starting point of the HandyChat web app.
-#
-# 1. It creates and configures the Flask application
-#    - Flask is the framework used to run the web app.
-#    - This part sets basic settings like security keys,
-#      debug mode, and database details.
-#
-# 2. It connects the app to the MySQL database
-#    - The connection uses a specific user (not root)
-#      to keep the database secure.
-#    - This lets the app read, save, and update data safely.
-#
-# 3. It registers different app sections (called blueprints)
-#    - Each blueprint handles one feature of the app,
-#      such as login, chat, or admin pages.
-#    - This helps keep the project organized and easier to manage.
-#
-# 4. It defines simple routes like:
-#    - The main or home page (where users first land)
-#    - A health check route that shows the app is running properly
-#
-# In short:
-# This file brings everything together—settings, database,
-# routes, and features—so the HandyChat app can run smoothly.
-# -------------------------------------------------------------
-
-
 from flask import Flask, jsonify, render_template, send_from_directory
 from extensions import db, cors
 import logging
@@ -51,8 +20,6 @@ def create_app():
         try:
             db.create_all()
             print("Database tables created successfully")
-            
-            # Initialize handbook data
            
         except Exception as e:
             print(f"Database table creation error: {e}")
