@@ -45,7 +45,7 @@ International students often struggle with:
 ## 1️⃣ Clone the Repository
 
     git clone https://github.com/fatima-zouhra/ZJNU_HACKATHON_2025_TEAM10.git
-    cd HandyChat
+    cd ZJNU_HACKATHON_2025_TEAM10\HandyChat
     
 ## 2️⃣ Create & Activate a Virtual Environment
     python -m venv .venv
